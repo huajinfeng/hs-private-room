@@ -1,0 +1,27 @@
+name: Deploy Dist Branch
+
+on:
+  push:
+    branches:
+      - main  # 只有当 main 分支有提交时才触发
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 赋予机器人写入仓库的权限
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整历史记录，以便 subtree 运行
+
+      - name: Deploy to dist branch
+        run: |
+          # 配置机器人身份（必须）
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 使用 subtree split 提取 dist 文件夹到临时分支，并强制推送到远程 dist 分支
+          # 这样即使远程 dist 被删除了也能自动创建
+          git push origin $(git subtree split --prefix dist main):dist --force
