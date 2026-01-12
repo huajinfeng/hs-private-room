@@ -88,6 +88,43 @@ export const searchIndex = [
     "title": "",
     "headers": [
       {
+        "level": 2,
+        "title": "事件循环",
+        "slug": "事件循环",
+        "link": "#事件循环",
+        "children": [
+          {
+            "level": 3,
+            "title": "浏览器的进程模型",
+            "slug": "浏览器的进程模型",
+            "link": "#浏览器的进程模型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "渲染主线程是如何工作的",
+            "slug": "渲染主线程是如何工作的",
+            "link": "#渲染主线程是如何工作的",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "若干解释",
+            "slug": "若干解释",
+            "link": "#若干解释",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Basics/WebBasics.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
         "level": 3,
         "title": "欢迎页面",
         "slug": "欢迎页面",
@@ -349,43 +386,6 @@ export const searchIndex = [
     "title": "",
     "headers": [],
     "path": "/docs/Compontents/TitleAnimation.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [
-      {
-        "level": 2,
-        "title": "事件循环",
-        "slug": "事件循环",
-        "link": "#事件循环",
-        "children": [
-          {
-            "level": 3,
-            "title": "浏览器的进程模型",
-            "slug": "浏览器的进程模型",
-            "link": "#浏览器的进程模型",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "渲染主线程是如何工作的",
-            "slug": "渲染主线程是如何工作的",
-            "link": "#渲染主线程是如何工作的",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "若干解释",
-            "slug": "若干解释",
-            "link": "#若干解释",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/docs/Basics/WebBasics.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -723,16 +723,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "first page in category2",
+    "title": "second page in category1",
     "headers": [],
-    "path": "/blogs/category2/2016/121501.html",
+    "path": "/blogs/category1/2019/092101.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "second page in category1",
+    "title": "first page in category2",
     "headers": [],
-    "path": "/blogs/category1/2019/092101.html",
+    "path": "/blogs/category2/2016/121501.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -751,16 +751,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

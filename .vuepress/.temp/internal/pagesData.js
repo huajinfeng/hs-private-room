@@ -19,6 +19,8 @@ export const pagesData = {
   "v-13fe50c9": () => import(/* webpackChunkName: "v-13fe50c9" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/README.en.html.js").then(({ data }) => data),
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
+  // path: /docs/Basics/WebBasics.html
+  "v-5f35402f": () => import(/* webpackChunkName: "v-5f35402f" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Basics/WebBasics.html.js").then(({ data }) => data),
   // path: /docs/Compontents/BlogHome.html
   "v-380c62c8": () => import(/* webpackChunkName: "v-380c62c8" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Compontents/BlogHome.html.js").then(({ data }) => data),
   // path: /docs/Compontents/ChargingAnimation.html
@@ -59,8 +61,6 @@ export const pagesData = {
   "v-38739e92": () => import(/* webpackChunkName: "v-38739e92" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Compontents/Title-effect.html.js").then(({ data }) => data),
   // path: /docs/Compontents/TitleAnimation.html
   "v-41cff211": () => import(/* webpackChunkName: "v-41cff211" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Compontents/TitleAnimation.html.js").then(({ data }) => data),
-  // path: /docs/Basics/WebBasics.html
-  "v-5f35402f": () => import(/* webpackChunkName: "v-5f35402f" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Basics/WebBasics.html.js").then(({ data }) => data),
   // path: /docs/Guide/guide.html
   "v-cf7e8f2a": () => import(/* webpackChunkName: "v-cf7e8f2a" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Guide/guide.html.js").then(({ data }) => data),
   // path: /docs/JavaScript/v-for.html
@@ -83,10 +83,10 @@ export const pagesData = {
   "v-65959fc1": () => import(/* webpackChunkName: "v-65959fc1" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/theme-reco/theme.html.js").then(({ data }) => data),
   // path: /blogs/category1/2018/121501.html
   "v-32598bfc": () => import(/* webpackChunkName: "v-32598bfc" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category1/2018/121501.html.js").then(({ data }) => data),
-  // path: /blogs/category2/2016/121501.html
-  "v-19e56119": () => import(/* webpackChunkName: "v-19e56119" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category2/2016/121501.html.js").then(({ data }) => data),
   // path: /blogs/category1/2019/092101.html
   "v-2eb9b31a": () => import(/* webpackChunkName: "v-2eb9b31a" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category1/2019/092101.html.js").then(({ data }) => data),
+  // path: /blogs/category2/2016/121501.html
+  "v-19e56119": () => import(/* webpackChunkName: "v-19e56119" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category2/2016/121501.html.js").then(({ data }) => data),
   // path: /blogs/category2/2017/092101.html
   "v-16458837": () => import(/* webpackChunkName: "v-16458837" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category2/2017/092101.html.js").then(({ data }) => data),
   // path: /404.html
