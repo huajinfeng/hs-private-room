@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-32a6e07a\",\"path\":\"/docs/Compontents/RingTrack.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"圆环运动\",\"slug\":\"圆环运动\",\"link\":\"#圆环运动\",\"children\":[]}],\"git\":{\"createdTime\":null,\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"docs/Compontents/RingTrack.md\"}")
+export const data = JSON.parse("{\"key\":\"v-32a6e07a\",\"path\":\"/docs/Compontents/RingTrack.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"圆环运动\",\"slug\":\"圆环运动\",\"link\":\"#圆环运动\",\"children\":[]}],\"git\":{\"createdTime\":1768201578000,\"updatedTime\":1768201578000,\"contributors\":[{\"name\":\"华金锋\",\"email\":\"943132087@qq.com\",\"commits\":1}]},\"filePathRelative\":\"docs/Compontents/RingTrack.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

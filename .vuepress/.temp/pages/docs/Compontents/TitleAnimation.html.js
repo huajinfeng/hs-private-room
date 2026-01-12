@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-41cff211\",\"path\":\"/docs/Compontents/TitleAnimation.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"createdTime\":null,\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"docs/Compontents/TitleAnimation.md\"}")
+export const data = JSON.parse("{\"key\":\"v-41cff211\",\"path\":\"/docs/Compontents/TitleAnimation.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"createdTime\":1768201578000,\"updatedTime\":1768201578000,\"contributors\":[{\"name\":\"华金锋\",\"email\":\"943132087@qq.com\",\"commits\":1}]},\"filePathRelative\":\"docs/Compontents/TitleAnimation.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

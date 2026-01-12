@@ -21,8 +21,6 @@ export const pagesComponents = {
   "v-13fe50c9": defineAsyncComponent(() => import(/* webpackChunkName: "v-13fe50c9" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/README.en.html.vue")),
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/index.html.vue")),
-  // path: /docs/Basics/WebBasics.html
-  "v-5f35402f": defineAsyncComponent(() => import(/* webpackChunkName: "v-5f35402f" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Basics/WebBasics.html.vue")),
   // path: /docs/Compontents/BlogHome.html
   "v-380c62c8": defineAsyncComponent(() => import(/* webpackChunkName: "v-380c62c8" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Compontents/BlogHome.html.vue")),
   // path: /docs/Compontents/ChargingAnimation.html
@@ -63,14 +61,18 @@ export const pagesComponents = {
   "v-38739e92": defineAsyncComponent(() => import(/* webpackChunkName: "v-38739e92" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Compontents/Title-effect.html.vue")),
   // path: /docs/Compontents/TitleAnimation.html
   "v-41cff211": defineAsyncComponent(() => import(/* webpackChunkName: "v-41cff211" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Compontents/TitleAnimation.html.vue")),
-  // path: /docs/JavaScript/v-for.html
-  "v-6ec390a4": defineAsyncComponent(() => import(/* webpackChunkName: "v-6ec390a4" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JavaScript/v-for.html.vue")),
+  // path: /docs/Basics/WebBasics.html
+  "v-5f35402f": defineAsyncComponent(() => import(/* webpackChunkName: "v-5f35402f" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Basics/WebBasics.html.vue")),
   // path: /docs/Guide/guide.html
   "v-cf7e8f2a": defineAsyncComponent(() => import(/* webpackChunkName: "v-cf7e8f2a" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Guide/guide.html.vue")),
+  // path: /docs/JavaScript/v-for.html
+  "v-6ec390a4": defineAsyncComponent(() => import(/* webpackChunkName: "v-6ec390a4" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JavaScript/v-for.html.vue")),
   // path: /docs/JAVAStudyNote/1.Javagaishu.html
   "v-01f485e2": defineAsyncComponent(() => import(/* webpackChunkName: "v-01f485e2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JAVAStudyNote/1.Javagaishu.html.vue")),
   // path: /docs/JAVAStudyNote/2.bianliangyuyunsuanfu.html
   "v-6d91a85e": defineAsyncComponent(() => import(/* webpackChunkName: "v-6d91a85e" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JAVAStudyNote/2.bianliangyuyunsuanfu.html.vue")),
+  // path: /docs/Python/1.bianliang_nazhihanshu.html
+  "v-9ae9b208": defineAsyncComponent(() => import(/* webpackChunkName: "v-9ae9b208" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/1.bianliang_nazhihanshu.html.vue")),
   // path: /docs/theme-reco/api.html
   "v-acdd9360": defineAsyncComponent(() => import(/* webpackChunkName: "v-acdd9360" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/theme-reco/api.html.vue")),
   // path: /docs/theme-reco/guide.html
@@ -83,12 +85,12 @@ export const pagesComponents = {
   "v-65959fc1": defineAsyncComponent(() => import(/* webpackChunkName: "v-65959fc1" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/theme-reco/theme.html.vue")),
   // path: /blogs/category1/2018/121501.html
   "v-32598bfc": defineAsyncComponent(() => import(/* webpackChunkName: "v-32598bfc" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category1/2018/121501.html.vue")),
+  // path: /blogs/category2/2016/121501.html
+  "v-19e56119": defineAsyncComponent(() => import(/* webpackChunkName: "v-19e56119" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category2/2016/121501.html.vue")),
   // path: /blogs/category1/2019/092101.html
   "v-2eb9b31a": defineAsyncComponent(() => import(/* webpackChunkName: "v-2eb9b31a" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category1/2019/092101.html.vue")),
   // path: /blogs/category2/2017/092101.html
   "v-16458837": defineAsyncComponent(() => import(/* webpackChunkName: "v-16458837" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category2/2017/092101.html.vue")),
-  // path: /blogs/category2/2016/121501.html
-  "v-19e56119": defineAsyncComponent(() => import(/* webpackChunkName: "v-19e56119" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/blogs/category2/2016/121501.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/404.html.vue")),
 }

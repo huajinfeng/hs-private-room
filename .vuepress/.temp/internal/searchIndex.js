@@ -88,43 +88,6 @@ export const searchIndex = [
     "title": "",
     "headers": [
       {
-        "level": 2,
-        "title": "事件循环",
-        "slug": "事件循环",
-        "link": "#事件循环",
-        "children": [
-          {
-            "level": 3,
-            "title": "浏览器的进程模型",
-            "slug": "浏览器的进程模型",
-            "link": "#浏览器的进程模型",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "渲染主线程是如何工作的",
-            "slug": "渲染主线程是如何工作的",
-            "link": "#渲染主线程是如何工作的",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "若干解释",
-            "slug": "若干解释",
-            "link": "#若干解释",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/docs/Basics/WebBasics.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [
-      {
         "level": 3,
         "title": "欢迎页面",
         "slug": "欢迎页面",
@@ -394,13 +357,35 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "v-for循环",
-        "slug": "v-for循环",
-        "link": "#v-for循环",
-        "children": []
+        "title": "事件循环",
+        "slug": "事件循环",
+        "link": "#事件循环",
+        "children": [
+          {
+            "level": 3,
+            "title": "浏览器的进程模型",
+            "slug": "浏览器的进程模型",
+            "link": "#浏览器的进程模型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "渲染主线程是如何工作的",
+            "slug": "渲染主线程是如何工作的",
+            "link": "#渲染主线程是如何工作的",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "若干解释",
+            "slug": "若干解释",
+            "link": "#若干解释",
+            "children": []
+          }
+        ]
       }
     ],
-    "path": "/docs/JavaScript/v-for.html",
+    "path": "/docs/Basics/WebBasics.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -459,6 +444,21 @@ export const searchIndex = [
       }
     ],
     "path": "/docs/Guide/guide.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "v-for循环",
+        "slug": "v-for循环",
+        "link": "#v-for循环",
+        "children": []
+      }
+    ],
+    "path": "/docs/JavaScript/v-for.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -579,6 +579,57 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "内置函数",
+        "slug": "内置函数",
+        "link": "#内置函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "变量",
+        "slug": "变量",
+        "link": "#变量",
+        "children": [
+          {
+            "level": 3,
+            "title": "在一行中声明多个变量",
+            "slug": "在一行中声明多个变量",
+            "link": "#在一行中声明多个变量",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "数据类型",
+        "slug": "数据类型",
+        "link": "#数据类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数据类型转换",
+        "slug": "数据类型转换",
+        "link": "#数据类型转换",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Number",
+        "slug": "number",
+        "link": "#number",
+        "children": []
+      }
+    ],
+    "path": "/docs/Python/1.bianliang_nazhihanshu.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "api",
     "headers": [],
     "path": "/docs/theme-reco/api.html",
@@ -672,6 +723,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "first page in category2",
+    "headers": [],
+    "path": "/blogs/category2/2016/121501.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "second page in category1",
     "headers": [],
     "path": "/blogs/category1/2019/092101.html",
@@ -682,13 +740,6 @@ export const searchIndex = [
     "title": "second page in category2",
     "headers": [],
     "path": "/blogs/category2/2017/092101.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "first page in category2",
-    "headers": [],
-    "path": "/blogs/category2/2016/121501.html",
     "pathLocale": "/",
     "extraFields": []
   },

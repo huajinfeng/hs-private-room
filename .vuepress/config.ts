@@ -98,12 +98,8 @@ export default defineUserConfig({
         ] 
       },
       {
-        text: "语言学习",
-        children: [
-          { text: "GO", link: "/docs/theme-reco/theme" },
-          { text: "JAVA", link: "/blogs/other/guide" },
-          { text: "Python", link: "/docs/Guide/guide" },
-        ],
+        text: "Python学习",
+        link: "/docs/Python/1.变量,内置函数.md"
       },
     ],
     //弹窗公告

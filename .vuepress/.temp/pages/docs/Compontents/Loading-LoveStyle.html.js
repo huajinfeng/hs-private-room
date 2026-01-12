@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-95c69932\",\"path\":\"/docs/Compontents/Loading-LoveStyle.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"爱心loading特效\",\"slug\":\"爱心loading特效\",\"link\":\"#爱心loading特效\",\"children\":[]}],\"git\":{\"createdTime\":null,\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"docs/Compontents/Loading-LoveStyle.md\"}")
+export const data = JSON.parse("{\"key\":\"v-95c69932\",\"path\":\"/docs/Compontents/Loading-LoveStyle.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"爱心loading特效\",\"slug\":\"爱心loading特效\",\"link\":\"#爱心loading特效\",\"children\":[]}],\"git\":{\"createdTime\":1768201578000,\"updatedTime\":1768201578000,\"contributors\":[{\"name\":\"华金锋\",\"email\":\"943132087@qq.com\",\"commits\":1}]},\"filePathRelative\":\"docs/Compontents/Loading-LoveStyle.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-9ae9b208\",\"path\":\"/docs/Python/1.%E5%8F%98%E9%87%8F_%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"内置函数\",\"slug\":\"内置函数\",\"link\":\"#内置函数\",\"children\":[]},{\"level\":2,\"title\":\"变量\",\"slug\":\"变量\",\"link\":\"#变量\",\"children\":[{\"level\":3,\"title\":\"在一行中声明多个变量\",\"slug\":\"在一行中声明多个变量\",\"link\":\"#在一行中声明多个变量\",\"children\":[]}]},{\"level\":2,\"title\":\"数据类型\",\"slug\":\"数据类型\",\"link\":\"#数据类型\",\"children\":[]},{\"level\":2,\"title\":\"数据类型转换\",\"slug\":\"数据类型转换\",\"link\":\"#数据类型转换\",\"children\":[]},{\"level\":2,\"title\":\"Number\",\"slug\":\"number\",\"link\":\"#number\",\"children\":[]}],\"git\":{\"createdTime\":null,\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"docs/Python/1.变量,内置函数.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

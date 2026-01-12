@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-32598bfc\",\"path\":\"/blogs/category1/2018/121501.html\",\"title\":\"first page in category1\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"first page in category1\",\"date\":\"2018/12/15\",\"tags\":[\"tag1\"],\"categories\":[\"category1\"]},\"headers\":[],\"git\":{\"createdTime\":null,\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"blogs/category1/2018/121501.md\"}")
+export const data = JSON.parse("{\"key\":\"v-32598bfc\",\"path\":\"/blogs/category1/2018/121501.html\",\"title\":\"first page in category1\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"first page in category1\",\"date\":\"2018/12/15\",\"tags\":[\"tag1\"],\"categories\":[\"category1\"]},\"headers\":[],\"git\":{\"createdTime\":1768201578000,\"updatedTime\":1768201578000,\"contributors\":[{\"name\":\"华金锋\",\"email\":\"943132087@qq.com\",\"commits\":1}]},\"filePathRelative\":\"blogs/category1/2018/121501.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
