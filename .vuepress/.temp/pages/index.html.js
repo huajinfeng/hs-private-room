@@ -1,1 +1,14 @@
 export const data = JSON.parse("{\"key\":\"v-8daa1a0e\",\"path\":\"/\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{\"home\":true,\"modules\":[\"BannerBrand\",\"Blog\",\"MdContent\",\"Footer\"],\"bannerBrand\":{\"bgImage\":\"/bg.svg\",\"title\":\"H&H's Home\",\"description\":\"开源的组件&学习笔记。\",\"tagline\":\"使用VuePress-theme-reco 2.0作为博客模板，记录一些常用or酷炫的组件，学习笔记。\",\"buttons\":[{\"text\":\"Guide(使用指南)\",\"link\":\"/docs/Guide/guide\"},{\"text\":\"Default Style\",\"link\":\"/docs/style-default-api/introduce\",\"type\":\"plain\"}],\"socialLinks\":[{\"icon\":\"LogoGithub\",\"link\":\"https://github.com/huajinfeng\"}]},\"blog\":{\"socialLinks\":[{\"icon\":\"LogoGithub\",\"link\":\"https://github.com/huajinfeng\"}]},\"isShowTitleInHome\":true,\"actionText\":\"About\",\"actionLink\":\"/views/other/about\"},\"headers\":[{\"level\":2,\"title\":\"文档结构\",\"slug\":\"文档结构\",\"link\":\"#文档结构\",\"children\":[]},{\"level\":2,\"title\":\"快速开始\",\"slug\":\"快速开始\",\"link\":\"#快速开始\",\"children\":[]}],\"git\":{\"createdTime\":1768201578000,\"updatedTime\":1768201578000,\"contributors\":[{\"name\":\"华金锋\",\"email\":\"943132087@qq.com\",\"commits\":1}]},\"filePathRelative\":\"README.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

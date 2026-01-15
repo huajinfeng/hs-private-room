@@ -18,21 +18,21 @@ export default defineUserConfig({
     docsDir: "example",
     lastUpdatedText: "",
     //看板娘，2.x暂未支持
-    // plugins: [
-    //   ['@vuepress/back-to-top'],
-    //   ['@vuepress/last-updated'],
-    //   ['@vuepress-reco/vuepress-plugin-kan-ban-niang',{
-    //     theme: ["blackCat"],
-    //     clean: false,
-    //     info: 'https://github.com/mengqiuleo',
-    //     messages: {
-    //       welcome: '',
-    //       home: '心里的花，我想要带你回家',
-    //       theme: '好吧，希望你能喜欢我的其他小伙伴。',
-    //       close: '再见哦'
-    //     }
-    //   }],
-    // ],
+    plugins: [
+      ['@vuepress/back-to-top'],
+      ['@vuepress/last-updated'],
+      ['@vuepress-reco/vuepress-plugin-kan-ban-niang',{
+        theme: ["blackCat"],
+        clean: false,
+        info: 'https://github.com/mengqiuleo',
+        messages: {
+          welcome: '',
+          home: '心里的花，我想要带你回家',
+          theme: '好吧，希望你能喜欢我的其他小伙伴。',
+          close: '再见哦'
+        }
+      }],
+    ],
     // series 为原 sidebar
     //左侧边栏
     series: {
@@ -73,21 +73,26 @@ export default defineUserConfig({
     "/docs/JAVAStudyNote": [
       {
         text: "JAVA基础",//侧边栏标题
-        children: ["1.Java概述","2.变量与运算符",],//md文档名
+        children: ["1.Java概述.md","2.变量与运算符.md",],//md文档名
       }
     ],
     "/docs/JavaScript/": [//基础侧边栏---父文件夹
       {
         text: "JS基础",//侧边栏标题
-        children: ["v-for",],//md文档名
+        children: ["v-for.md",],//md文档名
       },
     ],
+    "/docs/Python/":[//Python笔记
+      {
+        text:"Python基础",//侧边栏标题
+        children:["1、变量,内置函数.md","2、运算符.md","3、字符串.md","4、列表.md"]//md文档名
+      }
+    ]
     },
     //导航栏标签
     navbar: [
       { text: "Home", link: "/" },
       { text: "前端组件", link: "/docs/Compontents/BlogHome.md" },//可以添加一个首页md文档作为link路径
-      { text: "JAVA学习笔记", link: "/docs/JAVAStudyNote/1.Java概述.md" },
       { text: "前端学习笔记",
       // link: "/tags/tag1/1/"
         children: [
@@ -99,8 +104,9 @@ export default defineUserConfig({
       },
       {
         text: "Python学习",
-        link: "/docs/Python/1.变量,内置函数.md"
+        link: "/docs/Python/1、变量,内置函数.md"
       },
+      { text: "JAVA学习笔记", link: "/docs/JAVAStudyNote/1.Java概述.md" },
     ],
     //弹窗公告
     // bulletin: {

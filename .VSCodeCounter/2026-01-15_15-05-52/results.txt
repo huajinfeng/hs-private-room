@@ -1,0 +1,65 @@
+Date : 2026-01-15 15:05:52
+Directory : d:\vue\python\hs-private-room-main\hs-private-room\docs
+Total : 34 files,  4614 codes, 11 comments, 720 blanks, all 5345 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Markdown |         34 |      4,614 |         11 |        720 |      5,345 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                       | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                          |         34 |      4,614 |         11 |        720 |      5,345 |
+| Basics                                                                                     |          1 |         81 |          0 |         59 |        140 |
+| Compontents                                                                                |         20 |      2,945 |          6 |        173 |      3,124 |
+| Guide                                                                                      |          1 |         65 |          0 |         25 |         90 |
+| JAVAStudyNote                                                                              |          2 |        176 |          2 |         82 |        260 |
+| JavaScript                                                                                 |          1 |        131 |          0 |         17 |        148 |
+| Python                                                                                     |          4 |      1,148 |          3 |        334 |      1,485 |
+| theme-reco                                                                                 |          5 |         68 |          0 |         30 |         98 |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                   | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Basics\WebBasics.md                | Markdown |         81 |          0 |         59 |        140 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\BlogHome.md            | Markdown |        303 |          0 |          9 |        312 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\ChargingAnimation.md   | Markdown |        142 |          0 |          7 |        149 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\ChargingAnimation2.md  | Markdown |        192 |          0 |          6 |        198 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\Check-Box.md           | Markdown |        156 |          0 |         25 |        181 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\CodeBackground.md      | Markdown |         82 |          0 |         10 |         92 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\Evaluation.md          | Markdown |        716 |          0 |         27 |        743 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\GradientButton.md      | Markdown |         85 |          0 |          6 |         91 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\InputAnimation.md      | Markdown |         94 |          0 |          6 |        100 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\LikeAnimation.md       | Markdown |        147 |          0 |          5 |        152 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\Loading-CodeStyle.md   | Markdown |        142 |          0 |         22 |        164 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\Loading-LiquidStyle.md | Markdown |         97 |          6 |          7 |        110 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\Loading-LoveStyle.md   | Markdown |        101 |          0 |          6 |        107 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\MenuAnimation.md       | Markdown |          1 |          0 |          0 |          1 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\MergeText.md           | Markdown |         75 |          0 |          6 |         81 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\RingMenu.md            | Markdown |        190 |          0 |          6 |        196 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\RingTrack.md           | Markdown |        110 |          0 |          6 |        116 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\Round3D.md             | Markdown |         93 |          0 |          7 |        100 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\Title-effect.md        | Markdown |        144 |          0 |          5 |        149 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\TitleAnimation.md      | Markdown |         74 |          0 |          7 |         81 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Compontents\test.md                | Markdown |          1 |          0 |          0 |          1 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Guide\guide.md                     | Markdown |         65 |          0 |         25 |         90 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\JAVAStudyNote\1.Java概述.md          | Markdown |        106 |          1 |         46 |        153 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\JAVAStudyNote\2.变量与运算符.md          | Markdown |         70 |          1 |         36 |        107 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\JavaScript\v-for.md                | Markdown |        131 |          0 |         17 |        148 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Python\1、变量,内置函数.md                | Markdown |        166 |          1 |         50 |        217 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Python\2、运算符.md                    | Markdown |        172 |          1 |         50 |        223 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Python\3、字符串.md                    | Markdown |        394 |          1 |         91 |        486 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\Python\list.md                     | Markdown |        416 |          0 |        143 |        559 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\theme-reco\api.md                  | Markdown |          5 |          0 |          1 |          6 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\theme-reco\guide.md                | Markdown |         48 |          0 |         26 |         74 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\theme-reco\home.md                 | Markdown |          5 |          0 |          1 |          6 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\theme-reco\plugin.md               | Markdown |          5 |          0 |          1 |          6 |
+| d:\vue\python\hs-private-room-main\hs-private-room\docs\theme-reco\theme.md                | Markdown |          5 |          0 |          1 |          6 |
+| Total                                                                                      |          |      4,614 |         11 |        720 |      5,345 |
++--------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

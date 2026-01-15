@@ -1,0 +1,396 @@
+<template><div><p><RouterLink to="/docs/Python/04_strings.html">&lt;&lt; 第四天</RouterLink> | <RouterLink to="/docs/Python/06_tuples.html">第六天 &gt;&gt;</RouterLink></p>
+<h1 id="列表" tabindex="-1"><a class="header-anchor" href="#列表" aria-hidden="true">#</a> 列表</h1>
+<h2 id="概述" tabindex="-1"><a class="header-anchor" href="#概述" aria-hidden="true">#</a> 概述</h2>
+<p>Python 中有四种集合数据类型：</p>
+<ul>
+<li>List：有序且可变的集合。允许重复的成员。</li>
+<li>Tuple：有序且不可变的集合。允许重复的成员。</li>
+<li>Set：无序、不可索引且不可变的集合，但我们可以向集合中添加新项。不允许重复的成员。</li>
+<li>Dictionary：无序、可变且可索引的集合。不允许重复的成员。</li>
+</ul>
+<p>列表是不同数据类型的集合，有序且可修改（可变）。列表可以为空，也可以包含不同数据类型的项。</p>
+<h3 id="如何创建列表" tabindex="-1"><a class="header-anchor" href="#如何创建列表" aria-hidden="true">#</a> 如何创建列表</h3>
+<p>在 Python 中，我们可以通过两种方式创建列表：</p>
+<ul>
+<li>使用内置函数 list()</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>empty_list <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 这是一个空列表</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>empty_list<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 0</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>使用方括号，[]</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>empty_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment"># 这是一个空列表</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>empty_list<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 0</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>具有初始值的列表。我们使用 <em>len()</em> 来检查列表的长度。</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+<span class="token comment"># 打印列表及其长度</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Fruits:'</span><span class="token punctuation">,</span> fruits<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Number of fruits:'</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>输出
+Fruits<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+Number of fruits<span class="token punctuation">:</span> <span class="token number">4</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>列表可以包含不同数据类型的项</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code> lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'joffery'</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token operator">&lt;&lt;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'country'</span><span class="token punctuation">:</span><span class="token string">'China'</span><span class="token punctuation">,</span> <span class="token string">'city'</span><span class="token punctuation">:</span><span class="token string">'Suzhou'</span><span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token comment"># 包含不同数据类型的列表</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="使用正索引访问列表项" tabindex="-1"><a class="header-anchor" href="#使用正索引访问列表项" aria-hidden="true">#</a> 使用正索引访问列表项</h3>
+<p>我们使用索引访问列表中的每个项。列表索引从 0 开始。下图清楚地显示了索引从哪里开始。</p>
+<p><img src="@source/docs/pythonImages/list_negative_indexing.png" alt="List index"></p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+first_fruit <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token comment"># 我们正在使用其索引访问第一项</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>first_fruit<span class="token punctuation">)</span>      <span class="token comment"># banana</span>
+second_fruit <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>second_fruit<span class="token punctuation">)</span>     <span class="token comment"># orange</span>
+last_fruit <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>last_fruit<span class="token punctuation">)</span> <span class="token comment"># lemon</span>
+<span class="token comment"># Last index</span>
+last_index <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
+last_fruit <span class="token operator">=</span> fruits<span class="token punctuation">[</span>last_index<span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="使用负索引访问列表项" tabindex="-1"><a class="header-anchor" href="#使用负索引访问列表项" aria-hidden="true">#</a> 使用负索引访问列表项</h3>
+<p>负索引意味着从末尾开始，-1 指的是最后一项，-2 指的是倒数第二项。</p>
+<p><img src="@source/docs/images/list_negative_indexing.png" alt="List negative indexing"></p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+first_fruit <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">]</span>
+last_fruit <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+second_last <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>first_fruit<span class="token punctuation">)</span>      <span class="token comment"># banana</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>last_fruit<span class="token punctuation">)</span>       <span class="token comment"># lemon</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>second_last<span class="token punctuation">)</span>      <span class="token comment"># mango</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="拆解列表项" tabindex="-1"><a class="header-anchor" href="#拆解列表项" aria-hidden="true">#</a> 拆解列表项</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span><span class="token string">'item2'</span><span class="token punctuation">,</span><span class="token string">'item3'</span><span class="token punctuation">,</span> <span class="token string">'item4'</span><span class="token punctuation">,</span> <span class="token string">'item5'</span><span class="token punctuation">]</span>
+first_item<span class="token punctuation">,</span> second_item<span class="token punctuation">,</span> third_item<span class="token punctuation">,</span> <span class="token operator">*</span>rest <span class="token operator">=</span> lst
+<span class="token keyword">print</span><span class="token punctuation">(</span>first_item<span class="token punctuation">)</span>     <span class="token comment"># item1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>second_item<span class="token punctuation">)</span>    <span class="token comment"># item2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>third_item<span class="token punctuation">)</span>     <span class="token comment"># item3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>rest<span class="token punctuation">)</span>           <span class="token comment"># ['item4', 'item5']</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 示例一</span>
+fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">,</span><span class="token string">'lime'</span><span class="token punctuation">,</span><span class="token string">'apple'</span><span class="token punctuation">]</span>
+first_fruit<span class="token punctuation">,</span> second_fruit<span class="token punctuation">,</span> third_fruit<span class="token punctuation">,</span> <span class="token operator">*</span>rest <span class="token operator">=</span> fruits 
+<span class="token keyword">print</span><span class="token punctuation">(</span>first_fruit<span class="token punctuation">)</span>     <span class="token comment"># banana</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>second_fruit<span class="token punctuation">)</span>    <span class="token comment"># orange</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>third_fruit<span class="token punctuation">)</span>     <span class="token comment"># mango</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>rest<span class="token punctuation">)</span>           <span class="token comment"># ['lemon','lime','apple']</span>
+<span class="token comment"># 示例二</span>
+first<span class="token punctuation">,</span> second<span class="token punctuation">,</span> third<span class="token punctuation">,</span><span class="token operator">*</span>rest<span class="token punctuation">,</span> tenth <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span>          <span class="token comment"># 1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>second<span class="token punctuation">)</span>         <span class="token comment"># 2</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>third<span class="token punctuation">)</span>          <span class="token comment"># 3</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>rest<span class="token punctuation">)</span>           <span class="token comment"># [4,5,6,7,8,9]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>tenth<span class="token punctuation">)</span>          <span class="token comment"># 10</span>
+<span class="token comment"># 示例三</span>
+countries <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Germany'</span><span class="token punctuation">,</span> <span class="token string">'France'</span><span class="token punctuation">,</span><span class="token string">'Belgium'</span><span class="token punctuation">,</span><span class="token string">'Sweden'</span><span class="token punctuation">,</span><span class="token string">'Denmark'</span><span class="token punctuation">,</span><span class="token string">'Finland'</span><span class="token punctuation">,</span><span class="token string">'Norway'</span><span class="token punctuation">,</span><span class="token string">'Iceland'</span><span class="token punctuation">,</span><span class="token string">'Estonia'</span><span class="token punctuation">]</span>
+gr<span class="token punctuation">,</span> fr<span class="token punctuation">,</span> bg<span class="token punctuation">,</span> sw<span class="token punctuation">,</span> <span class="token operator">*</span>scandic<span class="token punctuation">,</span> es <span class="token operator">=</span> countries
+<span class="token keyword">print</span><span class="token punctuation">(</span>gr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fr<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>bg<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>sw<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>scandic<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>es<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="列表切分" tabindex="-1"><a class="header-anchor" href="#列表切分" aria-hidden="true">#</a> 列表切分</h3>
+<ul>
+<li>正索引：我们可以通过指定开始、结束和步长来指定一系列正索引，返回值将是一个新列表。 （开始默认值为 0，结束默认值为 len(lst) - 1（最后一项），步长默认值为 1）</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+all_fruits <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token comment"># 返回所有项</span>
+<span class="token comment">#与上面返回值相同</span>
+all_fruits <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token comment"># 如果不指定结束索引，将返回从开始到最后一项的所有项</span>
+orange_and_mango <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token comment"># 不包含第一项</span>
+orange_mango_lemon <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+orange_and_lemon <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token comment"># 我们使用了第三个参数，步长。 每两项取一条 - ['banana', 'mango']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>负索引：我们可以通过指定开始、结束和步长来指定一系列负索引，返回值将是一个新列表。</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+all_fruits <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token comment"># 返回所有项</span>
+orange_and_mango <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token comment"># 不包含最后一项，['orange', 'mango']</span>
+orange_mango_lemon <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token comment"># 返回从-3到末尾的项，['orange', 'mango', 'lemon']</span>
+reverse_fruits <span class="token operator">=</span> fruits<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token comment"># 负步长将按相反顺序排列列表,['lemon', 'mango', 'orange', 'banana']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="修改列表" tabindex="-1"><a class="header-anchor" href="#修改列表" aria-hidden="true">#</a> 修改列表</h3>
+<p>列表是一个可变或可修改的有序集合。下面我们修改 fruit 列表。</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'avocado'</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment">#  ['avocado', 'orange', 'mango', 'lemon']</span>
+fruits<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'apple'</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment">#  ['avocado', 'apple', 'mango', 'lemon']</span>
+last_index <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
+fruits<span class="token punctuation">[</span>last_index<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'lime'</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>        <span class="token comment">#  ['avocado', 'apple', 'mango', 'lime']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="检索列表项" tabindex="-1"><a class="header-anchor" href="#检索列表项" aria-hidden="true">#</a> 检索列表项</h3>
+<p>使用 <em>in</em> 运算符检查列表项是否为列表的成员。请参阅下面的示例。</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+does_exist <span class="token operator">=</span> <span class="token string">'banana'</span> <span class="token keyword">in</span> fruits
+<span class="token keyword">print</span><span class="token punctuation">(</span>does_exist<span class="token punctuation">)</span>  <span class="token comment"># True</span>
+does_exist <span class="token operator">=</span> <span class="token string">'lime'</span> <span class="token keyword">in</span> fruits
+<span class="token keyword">print</span><span class="token punctuation">(</span>does_exist<span class="token punctuation">)</span>  <span class="token comment"># False</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="添加列表项" tabindex="-1"><a class="header-anchor" href="#添加列表项" aria-hidden="true">#</a> 添加列表项</h3>
+<p>要将项添加到现有列表的末尾，我们使用 <em>append()</em> 方法。</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+lst<span class="token punctuation">.</span>append<span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'apple'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>           <span class="token comment"># ['banana', 'orange', 'mango', 'lemon', 'apple']</span>
+fruits<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'lime'</span><span class="token punctuation">)</span>   <span class="token comment"># ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="插入列表项" tabindex="-1"><a class="header-anchor" href="#插入列表项" aria-hidden="true">#</a> 插入列表项</h3>
+<p>我们可以使用 <em>insert()</em> 方法在列表中的指定索引处插入单个项。请注意，其他项将向右移动。<em>insert()</em> 方法接受两个参数：索引和要插入的项。</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>insert<span class="token punctuation">(</span>index<span class="token punctuation">,</span> item<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'apple'</span><span class="token punctuation">)</span> <span class="token comment"># 在 orange 。 mango 中插入 apple</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>           <span class="token comment"># ['banana', 'orange', 'apple', 'mango', 'lemon']</span>
+fruits<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'lime'</span><span class="token punctuation">)</span>   <span class="token comment"># ['banana', 'orange', 'apple', 'lime', 'mango', 'lemon']</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="移除列表项" tabindex="-1"><a class="header-anchor" href="#移除列表项" aria-hidden="true">#</a> 移除列表项</h3>
+<ul>
+<li>使用 <em>remove()</em> 方法从列表中删除指定的项</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">,</span> <span class="token string">'banana'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">'banana'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>  <span class="token comment"># ['orange', 'mango', 'lemon', 'banana'] - 此方法删除列表中第一次出现的项</span>
+fruits<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">'lemon'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>  <span class="token comment"># ['orange', 'mango', 'banana']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="使用-pop-删除列表项" tabindex="-1"><a class="header-anchor" href="#使用-pop-删除列表项" aria-hidden="true">#</a> 使用 Pop 删除列表项</h3>
+<p>使用 <em>pop()</em> 方法删除指定索引（如果未指定索引，则删除最后一项）：</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>       <span class="token comment"># 最后一项</span>
+lst<span class="token punctuation">.</span>pop<span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment"># ['banana', 'orange', 'mango']</span>
+
+fruits<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment"># ['orange', 'mango']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="使用-del-删除列表项" tabindex="-1"><a class="header-anchor" href="#使用-del-删除列表项" aria-hidden="true">#</a> 使用 Del 删除列表项</h3>
+<p>使用 <em>del</em> 关键字删除指定索引，也可以用于删除索引范围内的项。它还可以完全删除列表</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+<span class="token keyword">del</span> lst<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token comment"># 只删除一项</span>
+<span class="token keyword">del</span> lst        <span class="token comment"># 删除整个列表</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">,</span> <span class="token string">'kiwi'</span><span class="token punctuation">,</span> <span class="token string">'lime'</span><span class="token punctuation">]</span>
+<span class="token keyword">del</span> fruits<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment"># ['orange', 'mango', 'lemon', 'kiwi', 'lime']</span>
+<span class="token keyword">del</span> fruits<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment"># ['orange', 'lemon', 'kiwi', 'lime']</span>
+<span class="token keyword">del</span> fruits<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span>     <span class="token comment"># 这将删除给定索引之间的项，因此不会删除索引为 3 的项!</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment"># ['orange', 'lime']</span>
+<span class="token keyword">del</span> fruits
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment"># 这里会提示: NameError: name 'fruits' is not defined</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="清空列表项" tabindex="-1"><a class="header-anchor" href="#清空列表项" aria-hidden="true">#</a> 清空列表项</h3>
+<p>使用 <em>clear()</em> 方法清空列表：</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>       <span class="token comment"># []</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="列表复制" tabindex="-1"><a class="header-anchor" href="#列表复制" aria-hidden="true">#</a> 列表复制</h3>
+<p>可以通过将其重新分配给新变量来复制列表: list2 = list1。现在，list2 是 list1 的引用，我们对 list2 进行的任何更改也将修改原始的 list1。但是有很多时候我们不想修改原始的列表，而是想要一个不同的副本。为了避免这个问题，我们使用 <em>copy()</em>。</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst_copy <span class="token operator">=</span> lst<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits_copy <span class="token operator">=</span> fruits<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits_copy<span class="token punctuation">)</span>       <span class="token comment"># ['banana', 'orange', 'mango', 'lemon']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="连接列表" tabindex="-1"><a class="header-anchor" href="#连接列表" aria-hidden="true">#</a> 连接列表</h3>
+<p>有几种方法可以连接或连接两个或多个列表。</p>
+<ul>
+<li>加号 (+)</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+list3 <span class="token operator">=</span> list1 <span class="token operator">+</span> list2
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>positive_numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+zero <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+negative_numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+integers <span class="token operator">=</span> negative_numbers <span class="token operator">+</span> zero <span class="token operator">+</span> positive_numbers
+<span class="token keyword">print</span><span class="token punctuation">(</span>integers<span class="token punctuation">)</span> <span class="token comment"># [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]</span>
+fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+vegetables <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Tomato'</span><span class="token punctuation">,</span> <span class="token string">'Potato'</span><span class="token punctuation">,</span> <span class="token string">'Cabbage'</span><span class="token punctuation">,</span> <span class="token string">'Onion'</span><span class="token punctuation">,</span> <span class="token string">'Carrot'</span><span class="token punctuation">]</span>
+fruits_and_vegetables <span class="token operator">=</span> fruits <span class="token operator">+</span> vegetables
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits_and_vegetables <span class="token punctuation">)</span> <span class="token comment"># ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>使用 <em>extend()</em> 方法
+<em>extend()</em> 方法可以将列表附加到列表中。请参阅下面的示例。</li>
+</ul>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+list1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+list2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item3'</span><span class="token punctuation">,</span> <span class="token string">'item4'</span><span class="token punctuation">,</span> <span class="token string">'item5'</span><span class="token punctuation">]</span>
+list1<span class="token punctuation">.</span>extend<span class="token punctuation">(</span>list2<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>num1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+num2<span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>
+num1<span class="token punctuation">.</span>extend<span class="token punctuation">(</span>num2<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Numbers:'</span><span class="token punctuation">,</span> num1<span class="token punctuation">)</span> <span class="token comment"># Numbers: [0, 1, 2, 3, 4, 5, 6]</span>
+negative_numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+positive_numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span>
+zero <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+negative_numbers<span class="token punctuation">.</span>extend<span class="token punctuation">(</span>zero<span class="token punctuation">)</span>
+negative_numbers<span class="token punctuation">.</span>extend<span class="token punctuation">(</span>positive_numbers<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Integers:'</span><span class="token punctuation">,</span> negative_numbers<span class="token punctuation">)</span> <span class="token comment"># Integers: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]</span>
+fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+vegetables <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Tomato'</span><span class="token punctuation">,</span> <span class="token string">'Potato'</span><span class="token punctuation">,</span> <span class="token string">'Cabbage'</span><span class="token punctuation">,</span> <span class="token string">'Onion'</span><span class="token punctuation">,</span> <span class="token string">'Carrot'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>extend<span class="token punctuation">(</span>vegetables<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Fruits and vegetables:'</span><span class="token punctuation">,</span> fruits <span class="token punctuation">)</span> <span class="token comment"># Fruits and vegetables: ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="统计列表项" tabindex="-1"><a class="header-anchor" href="#统计列表项" aria-hidden="true">#</a> 统计列表项</h3>
+<p>使用 <em>count()</em> 方法返回列表中指定项出现的次数:</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>count<span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">'orange'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># 1</span>
+ages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ages<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token number">24</span><span class="token punctuation">)</span><span class="token punctuation">)</span>           <span class="token comment"># 3</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="查找项的索引" tabindex="-1"><a class="header-anchor" href="#查找项的索引" aria-hidden="true">#</a> 查找项的索引</h3>
+<p><em>index()</em> 方法返回列表中项的索引:</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>index<span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">.</span>index<span class="token punctuation">(</span><span class="token string">'orange'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># 1</span>
+ages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ages<span class="token punctuation">.</span>index<span class="token punctuation">(</span><span class="token number">24</span><span class="token punctuation">)</span><span class="token punctuation">)</span>           <span class="token comment"># 2， 第一次出现</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="列表反转" tabindex="-1"><a class="header-anchor" href="#列表反转" aria-hidden="true">#</a> 列表反转</h3>
+<p>使用 <em>reverse()</em> 方法反转列表的顺序。</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span> <span class="token comment"># ['lemon', 'mango', 'orange', 'banana']</span>
+ages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">]</span>
+ages<span class="token punctuation">.</span>reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ages<span class="token punctuation">)</span> <span class="token comment"># [24, 25, 24, 26, 25, 24, 19, 22]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="列表排序" tabindex="-1"><a class="header-anchor" href="#列表排序" aria-hidden="true">#</a> 列表排序</h3>
+<p>要对列表进行排序，我们可以使用 <em>sort()</em> 方法或内置函数 <em>sorted()</em>。<em>sort()</em> 方法将列表项按升序重新排序并修改原始列表。如果 <em>sort()</em> 方法的 reverse 参数为 true，则会按降序排列列表。</p>
+<ul>
+<li>
+<p>sort(): 这个方法会修改原始列表</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
+lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
+lst<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment"># ascending</span>
+lst<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>    <span class="token comment"># descending</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>示例：</strong></p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>             <span class="token comment"># 按字母排序， ['banana', 'lemon', 'mango', 'orange']</span>
+fruits<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span> <span class="token comment"># ['orange', 'mango', 'lemon', 'banana']</span>
+ages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">]</span>
+ages<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ages<span class="token punctuation">)</span> <span class="token comment">#  [19, 22, 24, 24, 24, 25, 25, 26]</span>
+ 
+ages<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>ages<span class="token punctuation">)</span> <span class="token comment">#  [26, 25, 25, 24, 24, 24, 22, 19]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sorted(): 不会修改原始列表，而是返回一个新列表</p>
+<p><strong>示例:</strong></p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># ['banana', 'lemon', 'mango', 'orange']</span>
+<span class="token comment"># Reverse order</span>
+fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
+fruits <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>fruits<span class="token punctuation">,</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>     <span class="token comment"># ['orange', 'mango', 'lemon', 'banana']</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ul>
+<p>🌕 你很勤奋，已经取得了很多成就。你刚刚完成了第 5 天的挑战，并且已经朝着伟大的目标迈出了 5 步。现在做一些练习来锻练你的大脑和肌肉。</p>
+<h2 id="💻-练习-第五天" tabindex="-1"><a class="header-anchor" href="#💻-练习-第五天" aria-hidden="true">#</a> 💻 练习 - 第五天</h2>
+<h3 id="练习-1级" tabindex="-1"><a class="header-anchor" href="#练习-1级" aria-hidden="true">#</a> 练习： 1级</h3>
+<ol>
+<li>
+<p>声明一个空列表</p>
+</li>
+<li>
+<p>声明一个包含 5 个以上项的列表</p>
+</li>
+<li>
+<p>查找列表的长度</p>
+</li>
+<li>
+<p>获取列表的第一项、中间项和最后一项</p>
+</li>
+<li>
+<p>声明一个名为 mixed_data_types 的列表，包含你的姓名、年龄、身高、婚姻状况和地址</p>
+</li>
+<li>
+<p>声明一个名为 it_companies 的列表，并分配初始值 Facebook、Google、Microsoft、Apple、IBM、Oracle 和 Amazon。</p>
+</li>
+<li>
+<p>使用 <em>print()</em> 打印列表</p>
+</li>
+<li>
+<p>打印列表中的公司数</p>
+</li>
+<li>
+<p>打印第一、中间和最后一家公司</p>
+</li>
+<li>
+<p>修改其中一家公司的名称后打印列表</p>
+</li>
+<li>
+<p>向 it_companies 添加一家 IT 公司</p>
+</li>
+<li>
+<p>在公司列表中间插入一家 IT 公司</p>
+</li>
+<li>
+<p>将其中一家 it_companies 公司的名称更改为大写（不包括 IBM!）</p>
+</li>
+<li>
+<p>使用字符串 '#;  ' 连接 it_companies</p>
+</li>
+<li>
+<p>检查 it_companies 列表中是否存在某个公司。</p>
+</li>
+<li>
+<p>使用 sort() 方法对列表进行排序</p>
+</li>
+<li>
+<p>使用 reverse() 方法按降序反转列表</p>
+</li>
+<li>
+<p>从列表中切分出前 3 家公司</p>
+</li>
+<li>
+<p>从列表中切分出最后 3 家公司</p>
+</li>
+<li>
+<p>从列表中切分出中间的 IT 公司或公司</p>
+</li>
+<li>
+<p>从列表中删除第一家 IT 公司</p>
+</li>
+<li>
+<p>从列表中删除中间的 IT 公司或公司</p>
+</li>
+<li>
+<p>从列表中删除最后一家 IT 公司</p>
+</li>
+<li>
+<p>从列表中删除所有 IT 公司</p>
+</li>
+<li>
+<p>销毁 it_companies 列表</p>
+</li>
+<li>
+<p>连接以下列表：</p>
+<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>front_end <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'HTML'</span><span class="token punctuation">,</span> <span class="token string">'CSS'</span><span class="token punctuation">,</span> <span class="token string">'JS'</span><span class="token punctuation">,</span> <span class="token string">'React'</span><span class="token punctuation">,</span> <span class="token string">'Redux'</span><span class="token punctuation">]</span>
+back_end <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Node'</span><span class="token punctuation">,</span><span class="token string">'Express'</span><span class="token punctuation">,</span> <span class="token string">'MongoDB'</span><span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>在连接的列表中插入 Python 和 SQL 到变量 full_stack 之后。</p>
+</li>
+</ol>
+<p><RouterLink to="/docs/Python/04_strings.html">&lt;&lt; 第四天</RouterLink> | <RouterLink to="/docs/Python/06_tuples.html">第六天 &gt;&gt;</RouterLink></p>
+</div></template>
+
+

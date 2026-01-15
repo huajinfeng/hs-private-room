@@ -9,42 +9,14 @@ export const searchIndex = [
   {
     "title": "",
     "headers": [],
-    "path": "/categories/category1/1/",
+    "path": "/categories/coding/1/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "",
     "headers": [],
-    "path": "/categories/category2/1/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/tags/tag2/1/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/tags/tag1/1/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/tags/tag4/1/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/tags/tag3/1/",
+    "path": "/tags/git/1/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -463,7 +435,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "01 JAVA概述",
     "headers": [
       {
         "level": 2,
@@ -542,7 +514,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "02 变量与运算符",
     "headers": [
       {
         "level": 2,
@@ -579,7 +551,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "01 变量和内置函数",
     "headers": [
       {
         "level": 2,
@@ -625,7 +597,280 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/docs/Python/1.bianliang_nazhihanshu.html",
+    "path": "/docs/Python/1、bianliang_nazhihanshu.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "02 运算符",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Boolean",
+        "slug": "boolean",
+        "link": "#boolean",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "运算符",
+        "slug": "运算符",
+        "link": "#运算符",
+        "children": [
+          {
+            "level": 3,
+            "title": "赋值运算符",
+            "slug": "赋值运算符",
+            "link": "#赋值运算符",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "算术运算符：",
+            "slug": "算术运算符",
+            "link": "#算术运算符",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "比较运算符",
+            "slug": "比较运算符",
+            "link": "#比较运算符",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "逻辑运算符",
+            "slug": "逻辑运算符",
+            "link": "#逻辑运算符",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/2、yunsuanfu.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "03 字符串",
+    "headers": [
+      {
+        "level": 2,
+        "title": "字符串",
+        "slug": "字符串",
+        "link": "#字符串",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建字符串",
+            "slug": "创建字符串",
+            "link": "#创建字符串",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "字符串串联",
+            "slug": "字符串串联",
+            "link": "#字符串串联",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "字符串中的转译序列",
+            "slug": "字符串中的转译序列",
+            "link": "#字符串中的转译序列",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "字符串格式化",
+            "slug": "字符串格式化",
+            "link": "#字符串格式化",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Python 字符串是字符序列",
+            "slug": "python-字符串是字符序列",
+            "link": "#python-字符串是字符序列",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "字符串方法",
+            "slug": "字符串方法",
+            "link": "#字符串方法",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/3、zifuchuan.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "列表",
+    "headers": [
+      {
+        "level": 2,
+        "title": "概述",
+        "slug": "概述",
+        "link": "#概述",
+        "children": [
+          {
+            "level": 3,
+            "title": "如何创建列表",
+            "slug": "如何创建列表",
+            "link": "#如何创建列表",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用正索引访问列表项",
+            "slug": "使用正索引访问列表项",
+            "link": "#使用正索引访问列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用负索引访问列表项",
+            "slug": "使用负索引访问列表项",
+            "link": "#使用负索引访问列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "拆解列表项",
+            "slug": "拆解列表项",
+            "link": "#拆解列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "列表切分",
+            "slug": "列表切分",
+            "link": "#列表切分",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "修改列表",
+            "slug": "修改列表",
+            "link": "#修改列表",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "检索列表项",
+            "slug": "检索列表项",
+            "link": "#检索列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "添加列表项",
+            "slug": "添加列表项",
+            "link": "#添加列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "插入列表项",
+            "slug": "插入列表项",
+            "link": "#插入列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "移除列表项",
+            "slug": "移除列表项",
+            "link": "#移除列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用 Pop 删除列表项",
+            "slug": "使用-pop-删除列表项",
+            "link": "#使用-pop-删除列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用 Del 删除列表项",
+            "slug": "使用-del-删除列表项",
+            "link": "#使用-del-删除列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "清空列表项",
+            "slug": "清空列表项",
+            "link": "#清空列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "列表复制",
+            "slug": "列表复制",
+            "link": "#列表复制",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "连接列表",
+            "slug": "连接列表",
+            "link": "#连接列表",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "统计列表项",
+            "slug": "统计列表项",
+            "link": "#统计列表项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "查找项的索引",
+            "slug": "查找项的索引",
+            "link": "#查找项的索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "列表反转",
+            "slug": "列表反转",
+            "link": "#列表反转",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "列表排序",
+            "slug": "列表排序",
+            "link": "#列表排序",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "💻 练习 - 第五天",
+        "slug": "💻-练习-第五天",
+        "link": "#💻-练习-第五天",
+        "children": [
+          {
+            "level": 3,
+            "title": "练习： 1级",
+            "slug": "练习-1级",
+            "link": "#练习-1级",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/4、liebiao.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -716,30 +961,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "first page in category1",
+    "title": "Git 子文件夹与独立分支管理",
     "headers": [],
-    "path": "/blogs/category1/2018/121501.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "second page in category1",
-    "headers": [],
-    "path": "/blogs/category1/2019/092101.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "first page in category2",
-    "headers": [],
-    "path": "/blogs/category2/2016/121501.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "second page in category2",
-    "headers": [],
-    "path": "/blogs/category2/2017/092101.html",
+    "path": "/blogs/coding/gitxiangguan/Git ziwenjianjiayudulifenzhiguanli.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -751,3 +975,16 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}
