@@ -165,8 +165,7 @@ first_name_to_list <span class="token operator">=</span> <span class="token buil
 ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...</li>
 <li>Complex：复数
 示例
-1 + j, 2 + 4j, 1 - 1j
-<RouterLink to="/docs/Python/2%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6.html">下一章 &gt;&gt;</RouterLink></li>
+1 + j, 2 + 4j, 1 - 1j</li>
 </ul>
 </div></template>
 

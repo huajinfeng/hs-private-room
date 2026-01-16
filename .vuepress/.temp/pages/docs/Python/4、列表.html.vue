@@ -1,6 +1,6 @@
-<template><div><p><RouterLink to="/docs/Python/04_strings.html">&lt;&lt; 第四天</RouterLink> | <RouterLink to="/docs/Python/06_tuples.html">第六天 &gt;&gt;</RouterLink></p>
+<template><div><p><RouterLink to="/docs/Python/3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/5%E3%80%81%E5%85%83%E7%BB%84.html">下一章 &gt;&gt;</RouterLink></p>
 <h1 id="_04-集合" tabindex="-1"><a class="header-anchor" href="#_04-集合" aria-hidden="true">#</a> 04 集合</h1>
-<h2 id="概述" tabindex="-1"><a class="header-anchor" href="#概述" aria-hidden="true">#</a> 概述</h2>
+<h3 id="概述" tabindex="-1"><a class="header-anchor" href="#概述" aria-hidden="true">#</a> 概述</h3>
 <p>Python 中有四种集合数据类型：</p>
 <ul>
 <li>List：有序且可变的集合。允许重复的成员。</li>
@@ -278,8 +278,8 @@ ages<span class="token punctuation">.</span>reverse<span class="token punctuatio
 <p>sort(): 这个方法会修改原始列表</p>
 <div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 语法</span>
 lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">]</span>
-lst<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment"># ascending</span>
-lst<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>    <span class="token comment"># descending</span>
+lst<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>                <span class="token comment"># 升序</span>
+lst<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>    <span class="token comment"># 降序</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>示例：</strong></p>
 <div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
 fruits<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -292,8 +292,8 @@ ages<span class="token punctuation">.</span>sort<span class="token punctuation">
  
 ages<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>ages<span class="token punctuation">)</span> <span class="token comment">#  [26, 25, 25, 24, 24, 24, 22, 19]</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sorted(): 不会修改原始列表，而是返回一个新列表</p>
-<p><strong>示例:</strong></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sorted(): 不会修改原始列表，而是返回一个新列表
+<strong>示例:</strong></p>
 <div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code>fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'banana'</span><span class="token punctuation">,</span> <span class="token string">'orange'</span><span class="token punctuation">,</span> <span class="token string">'mango'</span><span class="token punctuation">,</span> <span class="token string">'lemon'</span><span class="token punctuation">]</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment"># ['banana', 'lemon', 'mango', 'orange']</span>
 <span class="token comment"># Reverse order</span>
@@ -302,7 +302,50 @@ fruits <span class="token operator">=</span> <span class="token builtin">sorted<
 <span class="token keyword">print</span><span class="token punctuation">(</span>fruits<span class="token punctuation">)</span>     <span class="token comment"># ['orange', 'mango', 'lemon', 'banana']</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>
-<p><RouterLink to="/docs/Python/04_strings.html">&lt;&lt; 第四天</RouterLink> | <RouterLink to="/docs/Python/06_tuples.html">第六天 &gt;&gt;</RouterLink></p>
+<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h3>
+<ol>
+<li>
+<p>列表的本质
+特性：有序、可变（Mutable）、允许重复成员、可包含不同数据类型。
+创建：使用 list() 函数或方括号 []。</p>
+</li>
+<li>
+<p>访问与切片
+索引访问：支持正索引（从 0 开始）和负索引（从 -1 开始表示末尾）。
+切片 (Slicing)：通过 [start🔚step] 获取子列表。常用技巧如 [::-1] 可用于反转列表。
+解包 (Unpacking)：利用 * 运算符可以灵活地将列表元素分配给变量，多余的元素会被打包成一个新列表。</p>
+</li>
+<li>
+<p>修改与添加
+修改：直接通过索引赋值（如 fruits[0] = 'apple'）。
+添加：
+append(): 在末尾添加单个元素。
+insert(index, item): 在指定位置插入元素。
+extend(): 将另一个列表的所有元素追加到当前列表末尾。</p>
+</li>
+<li>
+<p>删除操作
+remove(item): 删除第一个匹配的特定元素。
+pop(index): 删除并返回指定索引的元素（默认最后一个）。
+del: 按索引或切片删除，也可销毁整个变量。
+clear(): 清空列表内容，保留空列表。</p>
+</li>
+<li>
+<p>排序与组织
+排序：
+sort(): 直接修改原列表。
+sorted(): 返回一个排序后的新列表，原列表不变。
+反转：使用 reverse() 方法。
+复制：为避免修改原对象，应使用 copy() 方法进行浅拷贝。</p>
+</li>
+<li>
+<p>其他常用工具
+in: 检查某个项是否存在于列表中。
+count(item): 统计特定项出现的次数。
+index(item): 返回特定项第一次出现的索引位置。
++: 运算符可直接连接两个列表。</p>
+</li>
+</ol>
 </div></template>
 
 

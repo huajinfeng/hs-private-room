@@ -63,14 +63,20 @@ export const pagesComponents = {
   "v-01f485e2": defineAsyncComponent(() => import(/* webpackChunkName: "v-01f485e2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JAVAStudyNote/1.Javagaishu.html.vue")),
   // path: /docs/JAVAStudyNote/2.bianliangyuyunsuanfu.html
   "v-6d91a85e": defineAsyncComponent(() => import(/* webpackChunkName: "v-6d91a85e" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JAVAStudyNote/2.bianliangyuyunsuanfu.html.vue")),
-  // path: /docs/Python/1、bianliang_nazhihanshu.html
-  "v-3a71eae2": defineAsyncComponent(() => import(/* webpackChunkName: "v-3a71eae2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/1、bianliang_nazhihanshu.html.vue")),
-  // path: /docs/Python/2、yunsuanfu.html
-  "v-c02ec0e2": defineAsyncComponent(() => import(/* webpackChunkName: "v-c02ec0e2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/2、yunsuanfu.html.vue")),
-  // path: /docs/Python/3、zifuchuan.html
-  "v-08743384": defineAsyncComponent(() => import(/* webpackChunkName: "v-08743384" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/3、zifuchuan.html.vue")),
+  // path: /docs/Python/1%E3%80%81%E5%8F%98%E9%87%8F_%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html
+  "v-3a71eae2": defineAsyncComponent(() => import(/* webpackChunkName: "v-3a71eae2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/1、变量_内置函数.html.vue")),
+  // path: /docs/Python/2%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6.html
+  "v-c02ec0e2": defineAsyncComponent(() => import(/* webpackChunkName: "v-c02ec0e2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/2、运算符.html.vue")),
+  // path: /docs/Python/3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2.html
+  "v-08743384": defineAsyncComponent(() => import(/* webpackChunkName: "v-08743384" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/3、字符串.html.vue")),
   // path: /docs/Python/4%E3%80%81%E5%88%97%E8%A1%A8.html
   "v-51b390d6": defineAsyncComponent(() => import(/* webpackChunkName: "v-51b390d6" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/4、列表.html.vue")),
+  // path: /docs/Python/5%E3%80%81%E5%85%83%E7%BB%84.html
+  "v-beff0d3c": defineAsyncComponent(() => import(/* webpackChunkName: "v-beff0d3c" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/5、元组.html.vue")),
+  // path: /docs/Python/6%E3%80%81%E9%9B%86%E5%90%88.html
+  "v-1b6c7713": defineAsyncComponent(() => import(/* webpackChunkName: "v-1b6c7713" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/6、集合.html.vue")),
+  // path: /docs/Python/7、zidian.html
+  "v-ca60fc34": defineAsyncComponent(() => import(/* webpackChunkName: "v-ca60fc34" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/7、zidian.html.vue")),
   // path: /docs/theme-reco/api.html
   "v-acdd9360": defineAsyncComponent(() => import(/* webpackChunkName: "v-acdd9360" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/theme-reco/api.html.vue")),
   // path: /docs/theme-reco/guide.html

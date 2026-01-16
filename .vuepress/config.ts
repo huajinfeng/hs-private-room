@@ -85,7 +85,7 @@ export default defineUserConfig({
     "/docs/Python/":[//Python笔记
       {
         text:"Python基础",//侧边栏标题
-        children:["1、变量,内置函数.md","2、运算符.md","3、字符串.md","4、列表.md"]//md文档名
+        children:["1、变量,内置函数.md","2、运算符.md","3、字符串.md","4、列表.md","5、元组.md","6、集合.md","7、字典.md"]//md文档名
       }
     ]
     },
