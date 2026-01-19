@@ -1,5 +1,4 @@
-<template><div><p><RouterLink to="/docs/Python/4%E3%80%81%E5%88%97%E8%A1%A8.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/6%E3%80%81%E9%9B%86%E5%90%88.html">下一章 &gt;&gt;</RouterLink></p>
-<h1 id="_05-元组" tabindex="-1"><a class="header-anchor" href="#_05-元组" aria-hidden="true">#</a> 05 元组</h1>
+<template><div><h1 id="_05-元组" tabindex="-1"><a class="header-anchor" href="#_05-元组" aria-hidden="true">#</a> 05 元组</h1>
 <p>元组是有序且不可变的不同数据类型的集合。一旦创建了元组，我们就无法更改其值。我们不能在元组中使用 add、insert、remove 方法，因为它是不可修改的（不可变的）。与列表不同，元组的方法很少。与元组相关的方法有：</p>
 <ul>
 <li>tuple()：创建一个空元组</li>

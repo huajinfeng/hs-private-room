@@ -1,5 +1,4 @@
-<template><div><p><RouterLink to="/docs/Python/3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/5%E3%80%81%E5%85%83%E7%BB%84.html">下一章 &gt;&gt;</RouterLink></p>
-<h1 id="_04-集合" tabindex="-1"><a class="header-anchor" href="#_04-集合" aria-hidden="true">#</a> 04 集合</h1>
+<template><div><h1 id="_04-集合" tabindex="-1"><a class="header-anchor" href="#_04-集合" aria-hidden="true">#</a> 04 集合</h1>
 <h3 id="概述" tabindex="-1"><a class="header-anchor" href="#概述" aria-hidden="true">#</a> 概述</h3>
 <p>Python 中有四种集合数据类型：</p>
 <ul>
@@ -346,7 +345,6 @@ index(item): 返回特定项第一次出现的索引位置。
 +: 运算符可直接连接两个列表。</p>
 </li>
 </ol>
-<p><RouterLink to="/docs/Python/3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/5%E3%80%81%E5%85%83%E7%BB%84.html">下一章 &gt;&gt;</RouterLink></p>
 </div></template>
 
 

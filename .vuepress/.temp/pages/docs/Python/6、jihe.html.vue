@@ -1,5 +1,4 @@
-<template><div><p><RouterLink to="/docs/Python/5%E3%80%81%E5%85%83%E7%BB%84.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/7%E3%80%81%E5%AD%97%E5%85%B8.html">第 8 天 &gt;&gt;</RouterLink></p>
-<h1 id="_06-集合" tabindex="-1"><a class="header-anchor" href="#_06-集合" aria-hidden="true">#</a> 06 集合</h1>
+<template><div><h1 id="_06-集合" tabindex="-1"><a class="header-anchor" href="#_06-集合" aria-hidden="true">#</a> 06 集合</h1>
 <p>集合是项目的集合。集合的数学定义也适用于 Python。集合是无序且未索引的不同元素的集合。在 Python 中，集合用于存储唯一项目，可以在集合之间找到 <em>并集</em>、<em>交集</em>、<em>差集</em>、<em>对称差集</em>、<em>子集</em>、<em>超集</em> 和 <em>不相交集</em>。</p>
 <h3 id="创建集合" tabindex="-1"><a class="header-anchor" href="#创建集合" aria-hidden="true">#</a> 创建集合</h3>
 <p>我们使用 <em>set()</em> 内置函数。</p>
@@ -195,14 +194,70 @@ even_numbers<span class="token punctuation">.</span>isdisjoint<span class="token
 python <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'p'</span><span class="token punctuation">,</span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token string">'h'</span><span class="token punctuation">,</span> <span class="token string">'o'</span><span class="token punctuation">,</span> <span class="token string">'n'</span><span class="token punctuation">}</span>
 dragon <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'d'</span><span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'g'</span><span class="token punctuation">,</span> <span class="token string">'o'</span><span class="token punctuation">,</span> <span class="token string">'n'</span><span class="token punctuation">}</span>
 python<span class="token punctuation">.</span>isdisjoint<span class="token punctuation">(</span>dragon<span class="token punctuation">)</span>  <span class="token comment"># 错误，有共同项 {'o', 'n'}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🌕 你是一颗冉冉升起的明星。你刚刚完成了第 7 天的挑战，你在通往伟大的道路上前进了 7 步。现在为你的大脑和肌肉做一些练习。</p>
-<h2 id="💻-练习-第-7-天" tabindex="-1"><a class="header-anchor" href="#💻-练习-第-7-天" aria-hidden="true">#</a> 💻 练习：第 7 天</h2>
-<div class="language-python line-numbers-mode" data-ext="py"><pre v-pre class="language-python"><code><span class="token comment"># 集合</span>
-it_companies <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'Facebook'</span><span class="token punctuation">,</span> <span class="token string">'Google'</span><span class="token punctuation">,</span> <span class="token string">'Microsoft'</span><span class="token punctuation">,</span> <span class="token string">'Apple'</span><span class="token punctuation">,</span> <span class="token string">'IBM'</span><span class="token punctuation">,</span> <span class="token string">'Oracle'</span><span class="token punctuation">,</span> <span class="token string">'Amazon'</span><span class="token punctuation">}</span>
-A <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">}</span>
-B <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">}</span>
-age <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">]</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><RouterLink to="/docs/Python/5%E3%80%81%E5%85%83%E7%BB%84.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/7%E3%80%81%E5%AD%97%E5%85%B8.html">第 8 天 &gt;&gt;</RouterLink></p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr>
+<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2>
+<h3 id="_1-集合的基础操作" tabindex="-1"><a class="header-anchor" href="#_1-集合的基础操作" aria-hidden="true">#</a> 1. 集合的基础操作</h3>
+<ul>
+<li><strong>创建</strong>：使用 <code v-pre>set()</code> 创建空集合，或使用花括号 <code v-pre>{}</code> 包含初始元素。</li>
+<li><strong>特性</strong>：<strong>无序</strong>（没有索引）、<strong>唯一</strong>（自动去重）。</li>
+<li><strong>基本工具</strong>：
+<ul>
+<li><code v-pre>len(set)</code>：获取元素个数。</li>
+<li><code v-pre>in</code>：检查成员资格。</li>
+<li><code v-pre>set(list)</code>：将列表转换为集合（常用于快速去重）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="_2-元素的管理" tabindex="-1"><a class="header-anchor" href="#_2-元素的管理" aria-hidden="true">#</a> 2. 元素的管理</h3>
+<ul>
+<li><strong>添加</strong>：<code v-pre>add()</code> 添加单个元素；<code v-pre>update()</code> 添加多个元素（可接收列表、元组等）。</li>
+<li><strong>移除</strong>：
+<ul>
+<li><code v-pre>remove()</code>：删除指定元素，若不存在则<strong>报错</strong>。</li>
+<li><code v-pre>discard()</code>：删除指定元素，若不存在<strong>不报错</strong>。</li>
+<li><code v-pre>pop()</code>：随机删除并返回一个元素。</li>
+</ul>
+</li>
+<li><strong>清理</strong>：<code v-pre>clear()</code> 清空内容；<code v-pre>del</code> 彻底销毁集合对象。</li>
+</ul>
+<h3 id="_3-集合间的数学运算" tabindex="-1"><a class="header-anchor" href="#_3-集合间的数学运算" aria-hidden="true">#</a> 3. 集合间的数学运算</h3>
+<table>
+<thead>
+<tr>
+<th><strong>运算名称</strong></th>
+<th><strong>Python 方法</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>并集 (Union)</strong></td>
+<td><code v-pre>union()</code> / <code v-pre>update()</code></td>
+<td>包含 A 和 B 中的所有元素。</td>
+</tr>
+<tr>
+<td><strong>交集 (Intersection)</strong></td>
+<td><code v-pre>intersection()</code></td>
+<td>仅包含 A 和 B 共同拥有的元素。</td>
+</tr>
+<tr>
+<td><strong>差集 (Difference)</strong></td>
+<td><code v-pre>difference()</code></td>
+<td>存在于 A 中但不在 B 中的元素。</td>
+</tr>
+<tr>
+<td><strong>对称差集 (Symmetric Diff)</strong></td>
+<td><code v-pre>symmetric_difference()</code></td>
+<td>A 和 B 的非共有元素（即：并集减去交集）。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4-关系判断" tabindex="-1"><a class="header-anchor" href="#_4-关系判断" aria-hidden="true">#</a> 4. 关系判断</h2>
+<ul>
+<li><strong>子集 (<code v-pre>issubset</code>)</strong>：判断 A 的所有元素是否都在 B 中。</li>
+<li><strong>超集 (<code v-pre>issuperset</code>)</strong>：判断 A 是否包含 B 的所有元素。</li>
+<li><strong>不相交 (<code v-pre>isdisjoint</code>)</strong>：判断两个集合是否完全没有共同点（交集为空）。</li>
+</ul>
 </div></template>
 
 

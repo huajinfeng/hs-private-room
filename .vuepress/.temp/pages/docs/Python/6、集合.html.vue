@@ -1,5 +1,4 @@
-<template><div><p><RouterLink to="/docs/Python/5%E3%80%81%E5%85%83%E7%BB%84.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/7%E3%80%81%E5%AD%97%E5%85%B8.html">下一章 &gt;&gt;</RouterLink></p>
-<h1 id="_06-集合" tabindex="-1"><a class="header-anchor" href="#_06-集合" aria-hidden="true">#</a> 06 集合</h1>
+<template><div><h1 id="_06-集合" tabindex="-1"><a class="header-anchor" href="#_06-集合" aria-hidden="true">#</a> 06 集合</h1>
 <p>集合是项目的集合。集合的数学定义也适用于 Python。集合是无序且未索引的不同元素的集合。在 Python 中，集合用于存储唯一项目，可以在集合之间找到 <em>并集</em>、<em>交集</em>、<em>差集</em>、<em>对称差集</em>、<em>子集</em>、<em>超集</em> 和 <em>不相交集</em>。</p>
 <h3 id="创建集合" tabindex="-1"><a class="header-anchor" href="#创建集合" aria-hidden="true">#</a> 创建集合</h3>
 <p>我们使用 <em>set()</em> 内置函数。</p>

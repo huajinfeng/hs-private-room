@@ -1,6 +1,5 @@
 <template><div><!-- 边栏的标题用 # -->
 <h1 id="_02-运算符" tabindex="-1"><a class="header-anchor" href="#_02-运算符" aria-hidden="true">#</a> 02 运算符</h1>
-<p><RouterLink to="/docs/Python/1%E3%80%81%E5%8F%98%E9%87%8F,%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2.html">下一章 &gt;&gt;</RouterLink></p>
 <h2 id="boolean" tabindex="-1"><a class="header-anchor" href="#boolean" aria-hidden="true">#</a> Boolean</h2>
 <p>布尔类型表示两个值之一：<em>True</em> 或 <em>False</em>。一旦我们开始使用比较运算符，这些数据类型的使用将变得清晰。第一个字母 <strong>T</strong> 表示 True，<strong>F</strong> 表示 False，与 JavaScript 不同，Python 的布尔类型的首字母应该是大写。</p>
 <p><strong>示例: 布尔类型的值</strong></p>

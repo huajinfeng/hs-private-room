@@ -1039,9 +1039,38 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "💻 练习：第 7 天",
-        "slug": "💻-练习-第-7-天",
-        "link": "#💻-练习-第-7-天",
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 集合的基础操作",
+            "slug": "_1-集合的基础操作",
+            "link": "#_1-集合的基础操作",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 元素的管理",
+            "slug": "_2-元素的管理",
+            "link": "#_2-元素的管理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 集合间的数学运算",
+            "slug": "_3-集合间的数学运算",
+            "link": "#_3-集合间的数学运算",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4. 关系判断",
+        "slug": "_4-关系判断",
+        "link": "#_4-关系判断",
         "children": []
       }
     ],
@@ -1050,7 +1079,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "字典",
+    "title": "07 字典",
     "headers": [
       {
         "level": 2,
@@ -1257,16 +1286,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

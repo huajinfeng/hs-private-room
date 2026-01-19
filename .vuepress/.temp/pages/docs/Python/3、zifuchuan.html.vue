@@ -1,6 +1,5 @@
 <template><div><!-- 边栏的标题用 # -->
 <h1 id="_03-字符串" tabindex="-1"><a class="header-anchor" href="#_03-字符串" aria-hidden="true">#</a> 03 字符串</h1>
-<p><RouterLink to="/docs/Python/2%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2.html">下一章 &gt;&gt;</RouterLink></p>
 <h2 id="字符串" tabindex="-1"><a class="header-anchor" href="#字符串" aria-hidden="true">#</a> 字符串</h2>
 <p>文本是一种字符串数据类型。任何以文本形式书写的数据类型都是字符串。任何用单引号、双引号或三引号括起来的数据都是字符串。有很多方法和内置函数来处理字符串类型的数据。使用 len() 方法获取字符串的长度。</p>
 <h3 id="创建字符串" tabindex="-1"><a class="header-anchor" href="#创建字符串" aria-hidden="true">#</a> 创建字符串</h3>
@@ -382,7 +381,6 @@ replace(): 全局替换子串。</p>
 split(): 将字符串切分为列表。
 join(): 将列表元素连接成字符串。</p>
 <p>内容判断：isalpha(), isdigit(), isalnum(), isidentifier() 等。</p>
-<p><RouterLink to="/docs/Python/2%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6.html">&lt;&lt; 上一章</RouterLink> | <RouterLink to="/docs/Python/3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2.html">下一章 &gt;&gt;</RouterLink></p>
 </div></template>
 
 

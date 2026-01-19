@@ -1,6 +1,5 @@
 <template><div><!-- 边栏的标题用 # -->
 <h1 id="_01-变量和内置函数" tabindex="-1"><a class="header-anchor" href="#_01-变量和内置函数" aria-hidden="true">#</a> 01 变量和内置函数</h1>
-<p><RouterLink to="/docs/Python/2%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6.html">下一章 &gt;&gt;</RouterLink></p>
 <h2 id="内置函数" tabindex="-1"><a class="header-anchor" href="#内置函数" aria-hidden="true">#</a> 内置函数</h2>
 <p>Python 提供了很多内置函数。内置函数是全局可用的，这意味着可以在不导入或配置的情况下使用内置函数。以下是几种最常用的 Python 内置函数：<em>print()</em>, <em>len()</em>, <em>type()</em>, <em>int()</em>, <em>float()</em>, <em>str()</em>, <em>input()</em>, <em>list()</em>, <em>dict()</em>, <em>min()</em>, <em>max()</em>, <em>sum()</em>, <em>sorted()</em>, <em>open()</em>, <em>file()</em>, <em>help()</em>, <em>dir()</em>。在下表中，您将看到从 <a href="https://docs.python.org/3.9/library/functions.html" target="_blank" rel="noopener noreferrer">Python 文档<ExternalLinkIcon/></a>中获取的详尽的 Python 内置函数列表。</p>
 <p><img src="@source/docs/pythonImages/builtin-functions.png" alt="Built-in Functions"></p>
