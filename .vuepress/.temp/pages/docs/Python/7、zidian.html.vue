@@ -189,6 +189,67 @@ keys <span class="token operator">=</span> dct<span class="token punctuation">.<
 dct <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'key1'</span><span class="token punctuation">:</span><span class="token string">'value1'</span><span class="token punctuation">,</span> <span class="token string">'key2'</span><span class="token punctuation">:</span><span class="token string">'value2'</span><span class="token punctuation">,</span> <span class="token string">'key3'</span><span class="token punctuation">:</span><span class="token string">'value3'</span><span class="token punctuation">,</span> <span class="token string">'key4'</span><span class="token punctuation">:</span><span class="token string">'value4'</span><span class="token punctuation">}</span>
 values <span class="token operator">=</span> dct<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span> <span class="token comment"># dict_values(['value1', 'value2', 'value3', 'value4'])</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr>
+<h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2>
+<h3 id="_1-核心定义与创建" tabindex="-1"><a class="header-anchor" href="#_1-核心定义与创建" aria-hidden="true">#</a> 1. 核心定义与创建</h3>
+<ul>
+<li><strong>结构</strong>：使用大括号 <code v-pre>{}</code>，每个元素由 <code v-pre>键:值</code> 组成。</li>
+<li><strong>多样性</strong>：字典的值可以是任意类型（字符串、列表、嵌套字典等）。</li>
+<li><strong>长度</strong>：使用 <code v-pre>len(dct)</code> 获取键值对的总数。</li>
+</ul>
+<h3 id="_2-基本操作矩阵" tabindex="-1"><a class="header-anchor" href="#_2-基本操作矩阵" aria-hidden="true">#</a> 2. 基本操作矩阵</h3>
+<p>针对字典的日常增删改查，文档提供了清晰的方法对比：</p>
+<table>
+<thead>
+<tr>
+<th><strong>操作类型</strong></th>
+<th><strong>方法 / 语法</strong></th>
+<th><strong>特点</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>访问</strong></td>
+<td><code v-pre>dct['key']</code></td>
+<td>简单直接，但若键不存在会报错 (KeyError)。</td>
+</tr>
+<tr>
+<td><strong>安全访问</strong></td>
+<td><code v-pre>dct.get('key')</code></td>
+<td><strong>推荐使用</strong>，键不存在时返回 <code v-pre>None</code>，不报错。</td>
+</tr>
+<tr>
+<td><strong>添加/修改</strong></td>
+<td><code v-pre>dct['key'] = value</code></td>
+<td>键不存在则添加，键存在则更新其值。</td>
+</tr>
+<tr>
+<td><strong>检查存在</strong></td>
+<td><code v-pre>'key' in dct</code></td>
+<td>返回布尔值，判断某个键是否在字典中。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="_3-数据清理与删除" tabindex="-1"><a class="header-anchor" href="#_3-数据清理与删除" aria-hidden="true">#</a> 3. 数据清理与删除</h3>
+<p>文档列举了四种移除数据的方式：</p>
+<ul>
+<li><strong><code v-pre>pop(key)</code></strong>: 删除指定键并返回其对应的值。</li>
+<li><strong><code v-pre>popitem()</code></strong>: 删除并返回字典中的最后一对键值。</li>
+<li><strong><code v-pre>del dct['key']</code></strong>: 物理删除指定键值对。</li>
+<li><strong><code v-pre>clear()</code></strong>: 清空字典内所有内容，保留空字典对象。</li>
+</ul>
+<h3 id="_4-视图对象-view-objects" tabindex="-1"><a class="header-anchor" href="#_4-视图对象-view-objects" aria-hidden="true">#</a> 4. 视图对象 (View Objects)</h3>
+<p>为了方便遍历和转换，Python 提供了三个重要方法：</p>
+<ul>
+<li><strong><code v-pre>keys()</code></strong>: 获取所有键。</li>
+<li><strong><code v-pre>values()</code></strong>: 获取所有值。</li>
+<li><strong><code v-pre>items()</code></strong>: 获取所有键值对（每个对以元组形式呈现），常用于 <code v-pre>for</code> 循环。</li>
+</ul>
+<h3 id="_5-安全复制" tabindex="-1"><a class="header-anchor" href="#_5-安全复制" aria-hidden="true">#</a> 5. 安全复制</h3>
+<ul>
+<li><strong><code v-pre>copy()</code></strong>: 执行浅拷贝。通过 <code v-pre>dct.copy()</code> 创建新对象，可以确保对副本的修改不会影响到原始字典的数据安全性。</li>
+</ul>
+</div></template>
 
 

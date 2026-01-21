@@ -551,6 +551,581 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "10 函数",
+    "headers": [
+      {
+        "level": 3,
+        "title": "定义函数",
+        "slug": "定义函数",
+        "link": "#定义函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "声明和调用函数",
+        "slug": "声明和调用函数",
+        "link": "#声明和调用函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "无参数的函数",
+        "slug": "无参数的函数",
+        "link": "#无参数的函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "返回值的函数 - 第 1 部分",
+        "slug": "返回值的函数-第-1-部分",
+        "link": "#返回值的函数-第-1-部分",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "有参数的函数",
+        "slug": "有参数的函数",
+        "link": "#有参数的函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "使用键值对传递参数",
+        "slug": "使用键值对传递参数",
+        "link": "#使用键值对传递参数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "返回值的函数 - 第 2 部分",
+        "slug": "返回值的函数-第-2-部分",
+        "link": "#返回值的函数-第-2-部分",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "带默认参数的函数",
+        "slug": "带默认参数的函数",
+        "link": "#带默认参数的函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "不定数量的参数",
+        "slug": "不定数量的参数",
+        "link": "#不定数量的参数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "函数中的默认和不定数量的参数",
+        "slug": "函数中的默认和不定数量的参数",
+        "link": "#函数中的默认和不定数量的参数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "作为另一个函数参数的函数",
+        "slug": "作为另一个函数参数的函数",
+        "link": "#作为另一个函数参数的函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 函数的核心概念",
+            "slug": "_1-函数的核心概念",
+            "link": "#_1-函数的核心概念",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 参数的多样化处理",
+            "slug": "_2-参数的多样化处理",
+            "link": "#_2-参数的多样化处理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 高级用法：函数作为参数",
+            "slug": "_3-高级用法-函数作为参数",
+            "link": "#_3-高级用法-函数作为参数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 编写技巧与注意事项",
+            "slug": "_4-编写技巧与注意事项",
+            "link": "#_4-编写技巧与注意事项",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/10、hanshu.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "11 模块",
+    "headers": [
+      {
+        "level": 3,
+        "title": "什么是模块",
+        "slug": "什么是模块",
+        "link": "#什么是模块",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "创建模块",
+        "slug": "创建模块",
+        "link": "#创建模块",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "导入模块",
+        "slug": "导入模块",
+        "link": "#导入模块",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "从模块中导入函数",
+        "slug": "从模块中导入函数",
+        "link": "#从模块中导入函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "从模块中导入函数并重命名",
+        "slug": "从模块中导入函数并重命名",
+        "link": "#从模块中导入函数并重命名",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "导入内置模块",
+        "slug": "导入内置模块",
+        "link": "#导入内置模块",
+        "children": [
+          {
+            "level": 3,
+            "title": "OS 模块",
+            "slug": "os-模块",
+            "link": "#os-模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Sys 模块",
+            "slug": "sys-模块",
+            "link": "#sys-模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "统计模块",
+            "slug": "统计模块",
+            "link": "#统计模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数学模块",
+            "slug": "数学模块",
+            "link": "#数学模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "字符串模块",
+            "slug": "字符串模块",
+            "link": "#字符串模块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "随机模块",
+            "slug": "随机模块",
+            "link": "#随机模块",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 模块的基础操作",
+            "slug": "_1-模块的基础操作",
+            "link": "#_1-模块的基础操作",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 强大的内置模块",
+            "slug": "_2-强大的内置模块",
+            "link": "#_2-强大的内置模块",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3. 命令行交互 (sys.argv)",
+        "slug": "_3-命令行交互-sys-argv",
+        "link": "#_3-命令行交互-sys-argv",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "文档展示了如何让 Python 脚本接收外部参数。通过 sys.argv，你可以从终端（Terminal/CMD）向程序传递信息，这使得脚本具有更强的通用性和自动化能力。",
+        "slug": "文档展示了如何让-python-脚本接收外部参数。通过-sys-argv-你可以从终端-terminal-cmd-向程序传递信息-这使得脚本具有更强的通用性和自动化能力。",
+        "link": "#文档展示了如何让-python-脚本接收外部参数。通过-sys-argv-你可以从终端-terminal-cmd-向程序传递信息-这使得脚本具有更强的通用性和自动化能力。",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 探索模块的技巧",
+        "slug": "_4-探索模块的技巧",
+        "link": "#_4-探索模块的技巧",
+        "children": []
+      }
+    ],
+    "path": "/docs/Python/11、mokuai.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "12 列表推导式",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Lambda 函数",
+        "slug": "lambda-函数",
+        "link": "#lambda-函数",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建 Lambda 函数",
+            "slug": "创建-lambda-函数",
+            "link": "#创建-lambda-函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Lambda 函数在另一个函数中",
+            "slug": "lambda-函数在另一个函数中",
+            "link": "#lambda-函数在另一个函数中",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 列表推导式 (List Comprehension)",
+            "slug": "_1-列表推导式-list-comprehension",
+            "link": "#_1-列表推导式-list-comprehension",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. Lambda 匿名函数",
+            "slug": "_2-lambda-匿名函数",
+            "link": "#_2-lambda-匿名函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 对比总结",
+            "slug": "_3-对比总结",
+            "link": "#_3-对比总结",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/12、liebiaotuidaoshi.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "13 高阶函数",
+    "headers": [
+      {
+        "level": 3,
+        "title": "函数作为参数",
+        "slug": "函数作为参数",
+        "link": "#函数作为参数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "函数作为返回值",
+        "slug": "函数作为返回值",
+        "link": "#函数作为返回值",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Python 闭包",
+        "slug": "python-闭包",
+        "link": "#python-闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Python 装饰器",
+        "slug": "python-装饰器",
+        "link": "#python-装饰器",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建装饰器",
+            "slug": "创建装饰器",
+            "link": "#创建装饰器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "将多个装饰器应用于单个函数",
+            "slug": "将多个装饰器应用于单个函数",
+            "link": "#将多个装饰器应用于单个函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "在装饰器函数中接受参数",
+            "slug": "在装饰器函数中接受参数",
+            "link": "#在装饰器函数中接受参数",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "内置高阶函数",
+        "slug": "内置高阶函数",
+        "link": "#内置高阶函数",
+        "children": [
+          {
+            "level": 3,
+            "title": "Python - Map 函数",
+            "slug": "python-map-函数",
+            "link": "#python-map-函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Python - Filter 函数",
+            "slug": "python-filter-函数",
+            "link": "#python-filter-函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Python - Reduce 函数",
+            "slug": "python-reduce-函数",
+            "link": "#python-reduce-函数",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 高阶函数的基础",
+            "slug": "_1-高阶函数的基础",
+            "link": "#_1-高阶函数的基础",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 装饰器 (Decorators)",
+            "slug": "_3-装饰器-decorators",
+            "link": "#_3-装饰器-decorators",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 内置高阶函数",
+            "slug": "_4-内置高阶函数",
+            "link": "#_4-内置高阶函数",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/13、gaojiehanshus.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "14 Python错误类型",
+    "headers": [
+      {
+        "level": 3,
+        "title": "SyntaxError (语法错误)",
+        "slug": "syntaxerror-语法错误",
+        "link": "#syntaxerror-语法错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "NameError (名称错误)",
+        "slug": "nameerror-名称错误",
+        "link": "#nameerror-名称错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "IndexError (索引错误)",
+        "slug": "indexerror-索引错误",
+        "link": "#indexerror-索引错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "ModuleNotFoundError (模块未找到错误)",
+        "slug": "modulenotfounderror-模块未找到错误",
+        "link": "#modulenotfounderror-模块未找到错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "AttributeError (属性错误)",
+        "slug": "attributeerror-属性错误",
+        "link": "#attributeerror-属性错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "KeyError (键错误)",
+        "slug": "keyerror-键错误",
+        "link": "#keyerror-键错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "TypeError (类型错误)",
+        "slug": "typeerror-类型错误",
+        "link": "#typeerror-类型错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "ImportError (导入错误)",
+        "slug": "importerror-导入错误",
+        "link": "#importerror-导入错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "ValueError (值错误)",
+        "slug": "valueerror-值错误",
+        "link": "#valueerror-值错误",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "ZeroDivisionError (零除错误)",
+        "slug": "zerodivisionerror-零除错误",
+        "link": "#zerodivisionerror-零除错误",
+        "children": []
+      }
+    ],
+    "path": "/docs/Python/14、Pythoncuowuleixing.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Python日期时间",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Python datetime",
+        "slug": "python-datetime",
+        "link": "#python-datetime",
+        "children": [
+          {
+            "level": 3,
+            "title": "获取 datetime 信息",
+            "slug": "获取-datetime-信息",
+            "link": "#获取-datetime-信息",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用 strftime 格式化日期输出",
+            "slug": "使用-strftime-格式化日期输出",
+            "link": "#使用-strftime-格式化日期输出",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用 strptime 将字符串转换为时间",
+            "slug": "使用-strptime-将字符串转换为时间",
+            "link": "#使用-strptime-将字符串转换为时间",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "从 datetime 使用 date",
+            "slug": "从-datetime-使用-date",
+            "link": "#从-datetime-使用-date",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用Time对象表示时间",
+            "slug": "使用time对象表示时间",
+            "link": "#使用time对象表示时间",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "计算两个时间点之间的差异",
+            "slug": "计算两个时间点之间的差异",
+            "link": "#计算两个时间点之间的差异",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用 timedelta 计算两个时间点之间的差异",
+            "slug": "使用-timedelta-计算两个时间点之间的差异",
+            "link": "#使用-timedelta-计算两个时间点之间的差异",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/15、Pythonriqishijian.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "01 变量和内置函数",
     "headers": [
       {
@@ -711,7 +1286,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "04 集合",
+    "title": "04 列表",
     "headers": [
       {
         "level": 3,
@@ -1179,9 +1754,245 @@ export const searchIndex = [
             "children": []
           }
         ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 核心定义与创建",
+            "slug": "_1-核心定义与创建",
+            "link": "#_1-核心定义与创建",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 基本操作矩阵",
+            "slug": "_2-基本操作矩阵",
+            "link": "#_2-基本操作矩阵",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 数据清理与删除",
+            "slug": "_3-数据清理与删除",
+            "link": "#_3-数据清理与删除",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 视图对象 (View Objects)",
+            "slug": "_4-视图对象-view-objects",
+            "link": "#_4-视图对象-view-objects",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5. 安全复制",
+            "slug": "_5-安全复制",
+            "link": "#_5-安全复制",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/docs/Python/7、zidian.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "08 条件语句",
+    "headers": [
+      {
+        "level": 3,
+        "title": "If 条件",
+        "slug": "if-条件",
+        "link": "#if-条件",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "If Else",
+        "slug": "if-else",
+        "link": "#if-else",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "If Elif Else",
+        "slug": "if-elif-else",
+        "link": "#if-elif-else",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "简写",
+        "slug": "简写",
+        "link": "#简写",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "嵌套条件",
+        "slug": "嵌套条件",
+        "link": "#嵌套条件",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "If 条件和逻辑运算符",
+        "slug": "if-条件和逻辑运算符",
+        "link": "#if-条件和逻辑运算符",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "If 和 or 逻辑运算符",
+        "slug": "if-和-or-逻辑运算符",
+        "link": "#if-和-or-逻辑运算符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 三种基本语法结构",
+            "slug": "_1-三种基本语法结构",
+            "link": "#_1-三种基本语法结构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 高级用法与技巧",
+            "slug": "_2-高级用法与技巧",
+            "link": "#_2-高级用法与技巧",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3. 逻辑运算符的组合",
+        "slug": "_3-逻辑运算符的组合",
+        "link": "#_3-逻辑运算符的组合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "关键点提醒",
+        "slug": "关键点提醒",
+        "link": "#关键点提醒",
+        "children": []
+      }
+    ],
+    "path": "/docs/Python/8、tiaojianyuju.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "09 循环",
+    "headers": [
+      {
+        "level": 3,
+        "title": "while 循环",
+        "slug": "while-循环",
+        "link": "#while-循环",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "break和continue - part 1",
+        "slug": "break和continue-part-1",
+        "link": "#break和continue-part-1",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "for 循环",
+        "slug": "for-循环",
+        "link": "#for-循环",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "break 和 continue - part 2",
+        "slug": "break-和-continue-part-2",
+        "link": "#break-和-continue-part-2",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "range() 函数",
+        "slug": "range-函数",
+        "link": "#range-函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "嵌套for循环",
+        "slug": "嵌套for循环",
+        "link": "#嵌套for循环",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "for和else",
+        "slug": "for和else",
+        "link": "#for和else",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "pass语句",
+        "slug": "pass语句",
+        "link": "#pass语句",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 两种核心循环类型",
+            "slug": "_1-两种核心循环类型",
+            "link": "#_1-两种核心循环类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 循环控制：Break 与 Continue",
+            "slug": "_2-循环控制-break-与-continue",
+            "link": "#_2-循环控制-break-与-continue",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 字典与序列的遍历",
+            "slug": "_3-字典与序列的遍历",
+            "link": "#_3-字典与序列的遍历",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 特殊语法特性",
+            "slug": "_4-特殊语法特性",
+            "link": "#_4-特殊语法特性",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/9、xunhuan.html",
     "pathLocale": "/",
     "extraFields": []
   },

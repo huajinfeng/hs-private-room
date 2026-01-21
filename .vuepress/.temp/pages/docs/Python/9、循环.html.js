@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-22f7a8ee\",\"path\":\"/docs/Python/9%E3%80%81%E5%BE%AA%E7%8E%AF.html\",\"title\":\"09 循环\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"while 循环\",\"slug\":\"while-循环\",\"link\":\"#while-循环\",\"children\":[]},{\"level\":3,\"title\":\"break和continue - part 1\",\"slug\":\"break和continue-part-1\",\"link\":\"#break和continue-part-1\",\"children\":[]},{\"level\":3,\"title\":\"for 循环\",\"slug\":\"for-循环\",\"link\":\"#for-循环\",\"children\":[]},{\"level\":3,\"title\":\"break 和 continue - part 2\",\"slug\":\"break-和-continue-part-2\",\"link\":\"#break-和-continue-part-2\",\"children\":[]},{\"level\":3,\"title\":\"range() 函数\",\"slug\":\"range-函数\",\"link\":\"#range-函数\",\"children\":[]},{\"level\":3,\"title\":\"嵌套for循环\",\"slug\":\"嵌套for循环\",\"link\":\"#嵌套for循环\",\"children\":[]},{\"level\":3,\"title\":\"for和else\",\"slug\":\"for和else\",\"link\":\"#for和else\",\"children\":[]},{\"level\":3,\"title\":\"pass语句\",\"slug\":\"pass语句\",\"link\":\"#pass语句\",\"children\":[]},{\"level\":2,\"title\":\"总结\",\"slug\":\"总结\",\"link\":\"#总结\",\"children\":[{\"level\":3,\"title\":\"1. 两种核心循环类型\",\"slug\":\"_1-两种核心循环类型\",\"link\":\"#_1-两种核心循环类型\",\"children\":[]},{\"level\":3,\"title\":\"2. 循环控制：Break 与 Continue\",\"slug\":\"_2-循环控制-break-与-continue\",\"link\":\"#_2-循环控制-break-与-continue\",\"children\":[]},{\"level\":3,\"title\":\"3. 字典与序列的遍历\",\"slug\":\"_3-字典与序列的遍历\",\"link\":\"#_3-字典与序列的遍历\",\"children\":[]},{\"level\":3,\"title\":\"4. 特殊语法特性\",\"slug\":\"_4-特殊语法特性\",\"link\":\"#_4-特殊语法特性\",\"children\":[]}]}],\"git\":{\"createdTime\":null,\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"docs/Python/9、循环.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

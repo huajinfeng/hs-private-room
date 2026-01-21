@@ -1,11 +1,60 @@
-<template><div><h1 id="_04-集合" tabindex="-1"><a class="header-anchor" href="#_04-集合" aria-hidden="true">#</a> 04 集合</h1>
+<template><div><h1 id="_04-列表" tabindex="-1"><a class="header-anchor" href="#_04-列表" aria-hidden="true">#</a> 04 列表</h1>
 <h3 id="概述" tabindex="-1"><a class="header-anchor" href="#概述" aria-hidden="true">#</a> 概述</h3>
 <p>Python 中有四种集合数据类型：</p>
 <ul>
-<li>List：有序且可变的集合。允许重复的成员。</li>
-<li>Tuple：有序且不可变的集合。允许重复的成员。</li>
-<li>Set：无序、不可索引且不可变的集合，但我们可以向集合中添加新项。不允许重复的成员。</li>
-<li>Dictionary：无序、可变且可索引的集合。不允许重复的成员。</li>
+<li>
+<p>List：有序且可变的集合。允许重复的成员。</p>
+</li>
+<li>
+<p>Tuple：有序且不可变的集合。允许重复的成员。</p>
+</li>
+<li>
+<p>Set：无序、不可索引且不可变的集合，但我们可以向集合中添加新项。不允许重复的成员。</p>
+</li>
+<li>
+<p>Dictionary：无序、可变且可索引的集合。不允许重复的成员。</p>
+<table>
+<thead>
+<tr>
+<th><strong>类型</strong></th>
+<th><strong>有序性</strong></th>
+<th><strong>可变性</strong></th>
+<th><strong>允许重复</strong></th>
+<th><strong>访问方式</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>List (列表)</strong></td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>索引 (0, 1, ...)</td>
+</tr>
+<tr>
+<td><strong>Tuple (元组)</strong></td>
+<td>是</td>
+<td>否</td>
+<td>是</td>
+<td>索引 (0, 1, ...)</td>
+</tr>
+<tr>
+<td><strong>Set (集合)</strong></td>
+<td>否</td>
+<td>元素不可变/集合可增删</td>
+<td>否</td>
+<td>迭代/成员检查</td>
+</tr>
+<tr>
+<td><strong>Dictionary (字典)</strong></td>
+<td>否 (3.7+保持插入顺序)</td>
+<td>是</td>
+<td>键不可重复/值可重复</td>
+<td>键 (Key)</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul>
 <p>列表是不同数据类型的集合，有序且可修改（可变）。列表可以为空，也可以包含不同数据类型的项。</p>
 <h3 id="如何创建列表" tabindex="-1"><a class="header-anchor" href="#如何创建列表" aria-hidden="true">#</a> 如何创建列表</h3>

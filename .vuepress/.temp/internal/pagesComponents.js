@@ -63,6 +63,18 @@ export const pagesComponents = {
   "v-01f485e2": defineAsyncComponent(() => import(/* webpackChunkName: "v-01f485e2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JAVAStudyNote/1.Javagaishu.html.vue")),
   // path: /docs/JAVAStudyNote/2.bianliangyuyunsuanfu.html
   "v-6d91a85e": defineAsyncComponent(() => import(/* webpackChunkName: "v-6d91a85e" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/JAVAStudyNote/2.bianliangyuyunsuanfu.html.vue")),
+  // path: /docs/Python/10、hanshu.html
+  "v-0dee1068": defineAsyncComponent(() => import(/* webpackChunkName: "v-0dee1068" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/10、hanshu.html.vue")),
+  // path: /docs/Python/11、mokuai.html
+  "v-634e2578": defineAsyncComponent(() => import(/* webpackChunkName: "v-634e2578" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/11、mokuai.html.vue")),
+  // path: /docs/Python/12、liebiaotuidaoshi.html
+  "v-610adf22": defineAsyncComponent(() => import(/* webpackChunkName: "v-610adf22" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/12、liebiaotuidaoshi.html.vue")),
+  // path: /docs/Python/13、gaojiehanshus.html
+  "v-35afcbc7": defineAsyncComponent(() => import(/* webpackChunkName: "v-35afcbc7" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/13、gaojiehanshus.html.vue")),
+  // path: /docs/Python/14、Pythoncuowuleixing.html
+  "v-083d4b02": defineAsyncComponent(() => import(/* webpackChunkName: "v-083d4b02" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/14、Pythoncuowuleixing.html.vue")),
+  // path: /docs/Python/15、Pythonriqishijian.html
+  "v-4db1da12": defineAsyncComponent(() => import(/* webpackChunkName: "v-4db1da12" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/15、Pythonriqishijian.html.vue")),
   // path: /docs/Python/1、bianliang_nazhihanshu.html
   "v-3a71eae2": defineAsyncComponent(() => import(/* webpackChunkName: "v-3a71eae2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/1、bianliang_nazhihanshu.html.vue")),
   // path: /docs/Python/2、yunsuanfu.html
@@ -77,6 +89,10 @@ export const pagesComponents = {
   "v-1b6c7713": defineAsyncComponent(() => import(/* webpackChunkName: "v-1b6c7713" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/6、jihe.html.vue")),
   // path: /docs/Python/7、zidian.html
   "v-ca60fc34": defineAsyncComponent(() => import(/* webpackChunkName: "v-ca60fc34" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/7、zidian.html.vue")),
+  // path: /docs/Python/8、tiaojianyuju.html
+  "v-421fa473": defineAsyncComponent(() => import(/* webpackChunkName: "v-421fa473" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/8、tiaojianyuju.html.vue")),
+  // path: /docs/Python/9、xunhuan.html
+  "v-22f7a8ee": defineAsyncComponent(() => import(/* webpackChunkName: "v-22f7a8ee" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/9、xunhuan.html.vue")),
   // path: /docs/theme-reco/api.html
   "v-acdd9360": defineAsyncComponent(() => import(/* webpackChunkName: "v-acdd9360" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/theme-reco/api.html.vue")),
   // path: /docs/theme-reco/guide.html
