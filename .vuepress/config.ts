@@ -85,7 +85,9 @@ export default defineUserConfig({
     "/docs/Python/":[//Python笔记
       {
         text:"Python基础",//侧边栏标题
-        children:["1、变量,内置函数.md","2、运算符.md","3、字符串.md","4、列表.md","5、元组.md","6、集合.md","7、字典.md"]//md文档名
+        children:["1、变量,内置函数.md","2、运算符.md","3、字符串.md","4、列表.md","5、元组.md","6、集合.md","7、字典.md",
+                  '8、条件语句.md','9、循环.md','10、函数.md','11、模块.md','12、列表推导式.md','13、高阶函数s.md',
+                '14、Python错误类型.md','15、Python日期时间.md']//md文档名
       }
     ]
     },
@@ -93,7 +95,7 @@ export default defineUserConfig({
     navbar: [
       { text: "Home", link: "/" },
       { text: "前端组件", link: "/docs/Compontents/BlogHome.md" },//可以添加一个首页md文档作为link路径
-      { text: "前端学习笔记",
+      { text: "前端笔记",
       // link: "/tags/tag1/1/"
         children: [
           { text: "基础", link: "/docs/Basics/WebBasics.md" },
@@ -103,10 +105,10 @@ export default defineUserConfig({
         ] 
       },
       {
-        text: "Python学习",
+        text: "Python笔记",
         link: "/docs/Python/1、变量,内置函数.md"
       },
-      { text: "JAVA学习笔记", link: "/docs/JAVAStudyNote/1.Java概述.md" },
+      { text: "JAVA笔记", link: "/docs/JAVAStudyNote/1.Java概述.md" },
     ],
     //弹窗公告
     // bulletin: {
