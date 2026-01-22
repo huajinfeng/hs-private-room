@@ -1061,7 +1061,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Python日期时间",
+    "title": "15 Python日期时间",
     "headers": [
       {
         "level": 2,
@@ -1126,6 +1126,357 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "16 异常处理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Python中的打包和解包参数",
+        "slug": "python中的打包和解包参数",
+        "link": "#python中的打包和解包参数",
+        "children": [
+          {
+            "level": 3,
+            "title": "解包",
+            "slug": "解包",
+            "link": "#解包",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "打包",
+            "slug": "打包",
+            "link": "#打包",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "打包列表",
+            "slug": "打包列表",
+            "link": "#打包列表",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Python中的展开",
+        "slug": "python中的展开",
+        "link": "#python中的展开",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "枚举",
+        "slug": "枚举",
+        "link": "#枚举",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Zip",
+        "slug": "zip",
+        "link": "#zip",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 异常处理 (try...except)",
+            "slug": "_1-异常处理-try-except",
+            "link": "#_1-异常处理-try-except",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 参数的打包与解包 (* 与 **)",
+            "slug": "_2-参数的打包与解包-与",
+            "link": "#_2-参数的打包与解包-与",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 高效迭代工具",
+            "slug": "_3-高效迭代工具",
+            "link": "#_3-高效迭代工具",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/16、yichangchuli.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "17 正则表达式",
+    "headers": [
+      {
+        "level": 3,
+        "title": "re 模块",
+        "slug": "re-模块",
+        "link": "#re-模块",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "re 模块中的方法",
+        "slug": "re-模块中的方法",
+        "link": "#re-模块中的方法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "使用RegEx拆分文本",
+        "slug": "使用regex拆分文本",
+        "link": "#使用regex拆分文本",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "编写RegEx模式",
+        "slug": "编写regex模式",
+        "link": "#编写regex模式",
+        "children": [
+          {
+            "level": 3,
+            "title": "方括号",
+            "slug": "方括号",
+            "link": "#方括号",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "RegEx中的转义字符(\\)",
+            "slug": "regex中的转义字符",
+            "link": "#regex中的转义字符",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "一次或多次(+)",
+            "slug": "一次或多次",
+            "link": "#一次或多次",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "句点(.)",
+            "slug": "句点",
+            "link": "#句点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "零次或多次(*)",
+            "slug": "零次或多次",
+            "link": "#零次或多次",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "零次或一次(?)",
+            "slug": "零次或一次",
+            "link": "#零次或一次",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "RegEx中的量词",
+            "slug": "regex中的量词",
+            "link": "#regex中的量词",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "脱字符(^)",
+            "slug": "脱字符",
+            "link": "#脱字符",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/17、zhengzebiaodashi.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "18 文件处理",
+    "headers": [
+      {
+        "level": 3,
+        "title": "打开文件进行读取",
+        "slug": "打开文件进行读取",
+        "link": "#打开文件进行读取",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "打开文件进行写入和更新",
+        "slug": "打开文件进行写入和更新",
+        "link": "#打开文件进行写入和更新",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "删除文件",
+        "slug": "删除文件",
+        "link": "#删除文件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "文件类型",
+        "slug": "文件类型",
+        "link": "#文件类型",
+        "children": [
+          {
+            "level": 3,
+            "title": "带有txt扩展名的文件",
+            "slug": "带有txt扩展名的文件",
+            "link": "#带有txt扩展名的文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "带有json扩展名的文件",
+            "slug": "带有json扩展名的文件",
+            "link": "#带有json扩展名的文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "将JSON转换为字典",
+            "slug": "将json转换为字典",
+            "link": "#将json转换为字典",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "将字典转换为JSON",
+            "slug": "将字典转换为json",
+            "link": "#将字典转换为json",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "保存为JSON文件",
+            "slug": "保存为json文件",
+            "link": "#保存为json文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "带有csv扩展名的文件",
+            "slug": "带有csv扩展名的文件",
+            "link": "#带有csv扩展名的文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "带有xlsx扩展名的文件",
+            "slug": "带有xlsx扩展名的文件",
+            "link": "#带有xlsx扩展名的文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "带有xml扩展名的文件",
+            "slug": "带有xml扩展名的文件",
+            "link": "#带有xml扩展名的文件",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/docs/Python/18、wenjianchuli.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "19 Python包管理器",
+    "headers": [
+      {
+        "level": 3,
+        "title": "什么是PIP？",
+        "slug": "什么是pip",
+        "link": "#什么是pip",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "安装PIP",
+        "slug": "安装pip",
+        "link": "#安装pip",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "使用pip安装包",
+        "slug": "使用pip安装包",
+        "link": "#使用pip安装包",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "卸载包",
+        "slug": "卸载包",
+        "link": "#卸载包",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "包列表",
+        "slug": "包列表",
+        "link": "#包列表",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "显示包信息",
+        "slug": "显示包信息",
+        "link": "#显示包信息",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "pip freeze",
+        "slug": "pip-freeze",
+        "link": "#pip-freeze",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "从URL读取数据",
+        "slug": "从url读取数据",
+        "link": "#从url读取数据",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "创建包",
+        "slug": "创建包",
+        "link": "#创建包",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "关于包的更多信息",
+        "slug": "关于包的更多信息",
+        "link": "#关于包的更多信息",
+        "children": []
+      }
+    ],
+    "path": "/docs/Python/19、Pythonbaoguanliqi.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "01 变量和内置函数",
     "headers": [
       {
@@ -1173,6 +1524,70 @@ export const searchIndex = [
       }
     ],
     "path": "/docs/Python/1、bianliang_nazhihanshu.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "20 类和对象",
+    "headers": [
+      {
+        "level": 3,
+        "title": "创建类",
+        "slug": "创建类",
+        "link": "#创建类",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "创建对象",
+        "slug": "创建对象",
+        "link": "#创建对象",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "类构造函数",
+        "slug": "类构造函数",
+        "link": "#类构造函数",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "对象方法",
+        "slug": "对象方法",
+        "link": "#对象方法",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "对象默认方法",
+        "slug": "对象默认方法",
+        "link": "#对象默认方法",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "修改类默认值的方法",
+        "slug": "修改类默认值的方法",
+        "link": "#修改类默认值的方法",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "继承",
+        "slug": "继承",
+        "link": "#继承",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "覆盖父类方法",
+        "slug": "覆盖父类方法",
+        "link": "#覆盖父类方法",
+        "children": []
+      }
+    ],
+    "path": "/docs/Python/20、leiheduixiang.html",
     "pathLocale": "/",
     "extraFields": []
   },

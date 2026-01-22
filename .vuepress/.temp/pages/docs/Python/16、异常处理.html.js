@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-4692d6fb\",\"path\":\"/docs/Python/16%E3%80%81%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.html\",\"title\":\"16 异常处理\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Python中的打包和解包参数\",\"slug\":\"python中的打包和解包参数\",\"link\":\"#python中的打包和解包参数\",\"children\":[{\"level\":3,\"title\":\"解包\",\"slug\":\"解包\",\"link\":\"#解包\",\"children\":[]},{\"level\":3,\"title\":\"打包\",\"slug\":\"打包\",\"link\":\"#打包\",\"children\":[]},{\"level\":3,\"title\":\"打包列表\",\"slug\":\"打包列表\",\"link\":\"#打包列表\",\"children\":[]}]},{\"level\":2,\"title\":\"Python中的展开\",\"slug\":\"python中的展开\",\"link\":\"#python中的展开\",\"children\":[]},{\"level\":2,\"title\":\"枚举\",\"slug\":\"枚举\",\"link\":\"#枚举\",\"children\":[]},{\"level\":2,\"title\":\"Zip\",\"slug\":\"zip\",\"link\":\"#zip\",\"children\":[]},{\"level\":2,\"title\":\"总结\",\"slug\":\"总结\",\"link\":\"#总结\",\"children\":[{\"level\":3,\"title\":\"1. 异常处理 (try...except)\",\"slug\":\"_1-异常处理-try-except\",\"link\":\"#_1-异常处理-try-except\",\"children\":[]},{\"level\":3,\"title\":\"2. 参数的打包与解包 (* 与 **)\",\"slug\":\"_2-参数的打包与解包-与\",\"link\":\"#_2-参数的打包与解包-与\",\"children\":[]},{\"level\":3,\"title\":\"3. 高效迭代工具\",\"slug\":\"_3-高效迭代工具\",\"link\":\"#_3-高效迭代工具\",\"children\":[]}]}],\"git\":{\"createdTime\":null,\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"docs/Python/16、异常处理.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -73,8 +73,18 @@ export const pagesData = {
   "v-083d4b02": () => import(/* webpackChunkName: "v-083d4b02" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/14、Pythoncuowuleixing.html.js").then(({ data }) => data),
   // path: /docs/Python/15、Pythonriqishijian.html
   "v-4db1da12": () => import(/* webpackChunkName: "v-4db1da12" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/15、Pythonriqishijian.html.js").then(({ data }) => data),
+  // path: /docs/Python/16、yichangchuli.html
+  "v-4692d6fb": () => import(/* webpackChunkName: "v-4692d6fb" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/16、yichangchuli.html.js").then(({ data }) => data),
+  // path: /docs/Python/17、zhengzebiaodashi.html
+  "v-dfa39654": () => import(/* webpackChunkName: "v-dfa39654" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/17、zhengzebiaodashi.html.js").then(({ data }) => data),
+  // path: /docs/Python/18、wenjianchuli.html
+  "v-8f8170d8": () => import(/* webpackChunkName: "v-8f8170d8" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/18、wenjianchuli.html.js").then(({ data }) => data),
+  // path: /docs/Python/19、Pythonbaoguanliqi.html
+  "v-07786f1f": () => import(/* webpackChunkName: "v-07786f1f" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/19、Pythonbaoguanliqi.html.js").then(({ data }) => data),
   // path: /docs/Python/1、bianliang_nazhihanshu.html
   "v-3a71eae2": () => import(/* webpackChunkName: "v-3a71eae2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/1、bianliang_nazhihanshu.html.js").then(({ data }) => data),
+  // path: /docs/Python/20、leiheduixiang.html
+  "v-6c8db12c": () => import(/* webpackChunkName: "v-6c8db12c" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/20、leiheduixiang.html.js").then(({ data }) => data),
   // path: /docs/Python/2、yunsuanfu.html
   "v-c02ec0e2": () => import(/* webpackChunkName: "v-c02ec0e2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/2、yunsuanfu.html.js").then(({ data }) => data),
   // path: /docs/Python/3、zifuchuan.html
