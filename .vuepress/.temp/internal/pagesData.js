@@ -85,6 +85,8 @@ export const pagesData = {
   "v-3a71eae2": () => import(/* webpackChunkName: "v-3a71eae2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/1、bianliang_nazhihanshu.html.js").then(({ data }) => data),
   // path: /docs/Python/20、leiheduixiang.html
   "v-6c8db12c": () => import(/* webpackChunkName: "v-6c8db12c" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/20、leiheduixiang.html.js").then(({ data }) => data),
+  // path: /docs/Python/21、wangyezhuaqu.html
+  "v-8e8fe1a0": () => import(/* webpackChunkName: "v-8e8fe1a0" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/21、wangyezhuaqu.html.js").then(({ data }) => data),
   // path: /docs/Python/2、yunsuanfu.html
   "v-c02ec0e2": () => import(/* webpackChunkName: "v-c02ec0e2" */"D:/vue/python/hs-private-room-main/hs-private-room/.vuepress/.temp/pages/docs/Python/2、yunsuanfu.html.js").then(({ data }) => data),
   // path: /docs/Python/3、zifuchuan.html
