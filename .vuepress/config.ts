@@ -5,7 +5,8 @@ import recoTheme from "vuepress-theme-reco";
 export default defineUserConfig({
   title: "H&H's Home",//导航栏标题
   dest: './dist',//生成的dist文件放在根目录  
-  base: '/hs-private-room/',// 设置站点根路径
+  // base: '/hs-private-room/',// 设置站点根路径
+  base: '/',
   head: [['link', { rel: 'icon', href: 'headlogo.ico' }]],//标签页logo
   description: "Just playing around",
   theme: recoTheme({
