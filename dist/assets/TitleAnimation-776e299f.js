@@ -1,0 +1,1 @@
+import{_ as t,p as o,q as c,ac as s,ad as _,s as a}from"./framework-1e5fd291.js";const n={},i=e=>(s("data-v-ce099b8c"),e=e(),_(),e),p=i(()=>a("span",null,"helloworld",-1)),d=[p];function l(e,r,u,f,m,h){return o(),c("div",null,d)}const x=t(n,[["render",l],["__scopeId","data-v-ce099b8c"],["__file","TitleAnimation.vue"]]);export{x as default};

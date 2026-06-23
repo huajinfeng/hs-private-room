@@ -1,1 +1,1 @@
-export const siteData = JSON.parse("{\"base\":\"/hs-private-room/\",\"lang\":\"en-US\",\"title\":\"H&H's Home\",\"description\":\"Just playing around\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"headlogo.ico\"}]],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"H&H's Home\",\"description\":\"Just playing around\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"headlogo.ico\"}]],\"locales\":{}}")
